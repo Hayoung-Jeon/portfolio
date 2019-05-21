@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=yes" />
+    <title>정샘물 모바일</title>
+    
+    <link rel="stylesheet" href="css/mobileMain.css" />
+    
+    <script src="js/jquery-2.1.4.js"></script>
+    <script src="js/modernizr.js"></script>
+    <script defer src="js/jquery.flexslider-min.js"></script>
+    <script src="js/toggle_menu.js"></script>
+</head>
+<body>
+   
+   <input id="toggle" type="checkbox" />
+   
+   <div id="wrap">
+       <header id="header">
+           <nav id="global_wrap">
+               <h2 class="blind">언어선택</h2>
+               <ul>
+                   <li><a href="#">ENGLISH</a></li>
+                   <span>|</span>
+                   <li><a href="#">中文</a></li>
+                   <span>|</span>
+                   <li><a href="#">日本語</a></li>
+               </ul>
+           </nav>
+           
+           <h1 id="h_logo"><a href="#">정샘물</a></h1>
+           
+           <label class="toggle" for="toggle">토글</label>
+           
+           <input id="toggle_search" type="checkbox" />
+           <label class="toggle_search" for="toggle_search">검색</label>
+           <div id="search_wrap">
+               <form>
+                   <fieldset>
+                        <legend>
+                            <img src="images/t_search.png" />
+                            <span>SEARCH</span>
+                        </legend>
+                        <input id="search_text" type="text" />
+                        <button id="btn_search">SEARCH</button>
+                   </fieldset>
+               </form>
+           </div>
+       </header>
+       
+       <nav id="nav_wrap">
+           <ul id="main_nav">
+                <li>
+                    <strong>JSM</strong>
+                    <ul>
+                        <li><a href="#">Brand JSM</a></li>
+                        <li><a href="#">Artist JSM</a></li>
+                        <li><a href="#">CSR</a></li>
+                        <li><a href="#">Store</a></li>
+                        <li><a href="#">Art &amp; Academy</a></li>
+                    </ul>
+                </li>
+                
+                <li>
+                    <strong>FIND ME</strong>
+                    <ul>
+                        <li><a href="#">Brand Movie</a></li>
+                        <li><a href="#">Created By JSM</a></li>
+                        <li><a href="#">Artist Tip</a></li>
+                        <li><a href="#">SNS</a></li>
+                    </ul>
+                </li>
+                
+                <li>
+                    <strong>SHOP</strong>
+                    <ul>
+                        <li><a href="#">All Products</a></li>
+                        <li><a href="#">Best Sellers</a></li>
+                        <li><a href="#">New Arrivals</a></li>
+                        <li><a href="#">MD's Choice</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <strong>LOUNGE</strong>
+                    <ul>
+                        <li><a href="#" class="kr">진행중인 이벤트</a></li>
+                        <li><a href="#" class="kr">종료된 이벤트</a></li>
+                        <li><a href="#">Line Story</a></li>
+                        <li><a href="#">Membership</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <strong>COMMUNITY</strong>
+                    <ul>
+                        <li><a href="#">1:1 Q&amp;A</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Review</a></li>
+                        <li><a href="#">Notice</a></li>
+                    </ul>
+                </li>
+           </ul>
+       </nav>
+       
+       <div id="main">
+            <script>
+                $(function(){
+                    SyntaxHighlighter.all();
+                });
+                $(window).load(function(){
+                    $('.flexslider').flexslider({
+                        animation: "slide",
+                        start: function(slider){
+                            $('body').removeClass('loading');
+                        }
+                    });
+                });
+	        </script>
+           
+            <section class="slider">
+                <div class="flexslider">
+                    <ul class="slides">
+                        <li><img src="images/m_bannerImg_01.jpg" alt="에센셜 누더 스킨 레드 에디션" /></li>
+                        <li><img src="images/m_bannerImg_02.jpg" alt="에센셜 틴티드 립글로우" /></li>
+                        <li><img src="images/m_bannerImg_03.jpg" alt="아티스트 블러쉬 터치" /></li>
+                    </ul>
+                </div>
+            </section>
+            
+            <script src="js/shCore.js"></script>
+            <script src="js/shBrushXml.js"></script>
+            <script src="js/shBrushJScript.js"></script>
+            
+            <script>
+                $(function() {
+                    var height;
+
+                    height = $("#b_movie > iframe").height();
+                    height += 50;
+
+                    $("#brand").css({
+                        height: height
+                    });
+                });
+            </script>
+            
+            <section id="brand">
+                <h3 class="section_title">BE MY COLOR</h3>
+                
+                <div id="b_movie">
+                    <iframe src="https://www.youtube.com/embed/XLB14LLtE8o?rel=0&autoplay=0&playsinline=0" gesture="media"  allow="encrypted-media" allowfullscreen></iframe>
+                </div>
+            </section>
+            
+            <section id="bestseller">
+                <h3 class="section_title">Bestsellers</h3>
+
+                <div class="item_wrap">
+                    <div class="item">
+                        <a href="#">
+                            <img src="images/bpd1.jpg" alt="" />
+                            <h3 class="item_name">정샘물 에센셜 물크림 스페셜 기프트 세트</h3>
+                            <p class="item_price">63,000원</p>
+                        </a>
+                    </div>
+
+                    <div class="item">
+                        <a href="#">
+                            <img src="images/bpd2.jpg" alt="" />
+                            <h3 class="item_name">정샘물 Be My Color, Red 에디션<br />
+                            에센셜 스킨 누더 쿠션</h3>
+                            <p class="item_price">42,000원</p>
+                        </a>
+                    </div>
+
+                    <div class="item">
+                        <a href="#">
+                            <img src="images/bpd3.jpg" alt="" />
+                            <h3 class="item_name">정샘물 쿠션 퍼프 - 패턴 포 시즌</h3>
+                            <p class="item_price">12,000원</p>
+                        </a>
+                    </div>
+
+                    <div class="item">
+                        <a href="#">
+                            <img src="images/bpd4.jpg" alt="" />
+                            <h3 class="item_name">정샘물 아티스트 블러쉬 터치</h3>
+                            <p class="item_price">32,000원</p>
+                        </a>
+                    </div>
+
+                    <div class="item">
+                        <a href="#">
+                            <img src="images/bpd5.jpg" alt="" />
+                            <h3 class="item_name">정샘물 에센셜 틴티드 립 글로우</h3>
+                            <p class="item_price">18,000원</p>
+                        </a>
+                    </div>
+
+                    <div class="item">
+                        <a href="#">
+                            <img src="images/bpd6.jpg" alt="" />
+                            <h3 class="item_name">정샘물 쿠션실러</h3>
+                            <p class="item_price">52,000원</p>
+                        </a>
+                    </div>
+
+                    <div class="item">
+                        <a href="#">
+                            <img src="images/bpd7.jpg" alt="" />
+                            <h3 class="item_name">정샘물 아티스트 파우더리 브로우 펜슬</h3>
+                            <p class="item_price">23,000원</p>
+                        </a>
+                    </div>
+
+                    <div class="item">
+                        <a href="#">
+                            <img src="images/bpd8.jpg" alt="" />
+                            <h3 class="item_name">정샘물 하이 틴티드 립 락커</h3>
+                            <p class="item_price">23,000원</p>
+                        </a>
+                    </div>
+                </div>
+                
+                <button class="btn_next">다음</button>
+		        <button class="btn_prev">이전</button>
+            </section>
+            
+            <script>
+                $(function() {
+                    var leftValue=0;
+
+                    $("#bestseller > .btn_next").click(function(){
+                        leftValue-=100;
+
+                        if(leftValue<=-700){
+                            leftValue=-700;
+                            $(this).css({opacity: 0});
+                        }
+                        $("#bestseller > .item_wrap").stop().animate({left:leftValue+"%"});
+                        $("#bestseller > .btn_prev").css({opacity: 0.5});
+                    });
+
+                    $("#bestseller > .btn_prev").click(function(){
+                        leftValue+=100;
+
+                        if(leftValue>=0){
+                            leftValue=0;
+                            $(this).css({opacity: 0});
+                        }
+                        $("#bestseller > .item_wrap").stop().animate({left:leftValue+"%"});
+                        $("#bestseller > .btn_next").css({opacity: 0.5});
+			        });
+                    
+                    setInterval(function(){
+                        var heightValue=$("#bestseller .item").outerHeight() + 50;
+                        $("#bestseller").css({height:heightValue});
+                    },20);
+                });
+            </script>
+
+            <section id="goto">
+                <ul>
+                    <li><a href="#">정샘물 이벤트</a></li>
+                    <li><a href="#">정샘물 인스타</a></li>
+                </ul>
+            </section>
+
+            <footer id="footer">
+                <h3 id="f_logo"><a href="http://willnwish.dothome.co.kr/">푸터 로고</a></h3>
+
+                <div id="f_sns">
+                    <a href="#">페이스북</a>
+                    <a href="#">인스타그램</a>
+                </div>
+
+                <ul class="util">
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">개인정보 처리방침</a></li>
+                </ul>
+
+                <div id="company_detail">
+                    <address>
+                        사업자등록번호 : 261-81-20935<br />통신판매업신고 : 2015-서울강남02896 <strong><a href="#">사업자정보확인</a></strong> 개인정보보호최고책임자 : 유민석<br />
+                        서울시 강남구 압구정로72길 8 백원빌딩 3층<br /> 상호명: 주식회사 정샘물뷰티, 대표자:유민석<br />
+                        jungsaemmool beauty 3F 8,<br />Apgujeong-ro 72-gil, Gangnam-gu, SEOUL, KOREA<br />TEL : 080-816-7671<br />
+                        E-Mail<br />마케팅 제안, 업무제휴 :<br />jsmbeauty@jsmbeauty.com<br />공식CS(상품, 주문관련 그 외) :<br />jsmbeauty_CS@jsmbeauty.com
+
+                    </address>
+
+                    <p class="copyright">COPYRIGHT&copy;2015 JUNGSAEMMOOL.COM<br />ALL RIGHT RESERVERD.</p>
+                </div>
+            </footer>
+        </div>
+
+        
+        <nav id="user">
+            <ul>
+                <li>
+                    <group>
+                        <img src="images/n_login.png">
+                        <span>로그인</span>
+                    </group>
+                </li>
+                <li>
+                    <group>
+                        <img src="images/n_signup.png">
+                        <span>회원가입</span>
+                    </group>
+                </li>
+                <li>
+                    <group>
+                        <img src="images/n_shop.png">
+                        <span>장바구니</span>
+                    </group>
+                </li>
+            </ul>
+        </nav>
+   </div>
+    
+</body>
+</html>

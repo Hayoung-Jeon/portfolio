@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=1.0,  maximum-scale=2.0" />
+
+	<title>전하영의 포트폴리오</title>
+
+	<link rel="shortcut icon" type="image/x-icon" href="images/title_icon.png">
+	<link rel="stylesheet" href="css/master.css" />
+
+	<script src="js/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+
+	<header id="header">
+		<img class="jello-horizontal" src="images/main_icon.jpg" alt="전하영의 포트폴리오" />
+		<h1>HAYOUNG JEON</h1>
+	</header>
+
+	<section id="aboutme">
+		<h3 class="section_title">About me</h3>
+
+		<div id="can_do">
+			<strong>안녕하세요, 신입 웹디자이너/퍼블리셔 전하영입니다. 저는..</strong><br /><br />
+			<p>
+				<span>포토샵과 일러스트레이터를 이용해 그래픽, 웹, UI/UX를 디자인 할 수 있습니다.</span>
+				<span>html5, css, javascript, jQuery로 서로 다른 레이아웃의 반응형, PC, 모바일 웹사이트를 만들 수 있습니다.</span>
+				<span>다양한 프리소스를 활용, 변형해 사이트에 어울리는 분위기를 연출할 수 있습니다.</span>
+			</p>
+		</div>
+
+		<ul id="info_wrap">
+			<li id="life_style">
+				<div class="click">
+					<img src="images/life_style_icon.png" alt="가치관" />
+					<img src="images/question_icon.png" alt="클릭하세요" />
+					<p>가치관</p>
+				</div>
+
+				<div class="aboutme_detail">
+					<strong>「소소하지만 특별한 삶」</strong><br /><br />
+					<span>쳇바퀴 같은 삶이라고들 하지만, 가만 생각해보면 소소하지만 특별한 순간들이 있는 것 같습니다.<br />
+					오늘 걸었던 예쁜 길, 우연히 발견한 작은 가게, 소중한 사람과 함께 보낸 시간...<br />
+					일상적이고 소소하지만, 마음 속에 간직하면 오늘 하루가 조금 더 소중해지는 순간들을<br />
+					놓치지 않는 밝고 건강한 사람으로 살아가려 하고 있습니다.</span>
+
+					<div class="btn_close">닫기</div>
+				</div>
+			</li>
+
+			<li id="hobby">
+				<div class="click">
+					<img src="images/hobby_icon.png" alt="취미" />
+					<img src="images/question_icon.png" alt="클릭하세요" />
+					<p>취미</p>
+				</div>
+
+				<div class="aboutme_detail">
+					<strong>「방탈출」</strong><br />
+					여러 퍼즐들과 문제들에 몰두하는 것을 좋아합니다.<br />
+					<strong>「추리소설」</strong><br />
+					제일 좋아하는 작가는 일본의 히가시노 게이고입니다.<br />
+					<strong>「여행」</strong><br />
+					현지의 특색이 잘 살아있는 마을들을 찾아다니는 자유여행을 좋아합니다.<br />
+
+					<div class="btn_close">닫기</div>
+				</div>
+			</li>
+
+			<li id="vision">
+				<div class="click">
+					<img src="images/vision_icon.png" alt="비전" />
+					<img src="images/question_icon.png" alt="클릭하세요" />
+					<p>비전</p>
+				</div>
+
+				<div class="aboutme_detail">
+					<strong>「향후 몇 년은 공부를 계속해나갈 생각입니다」</strong><br /><br />
+					2019년 2학기에는 방송통신대학에 컴퓨터공학과로 편입할 예정입니다.<br />
+					기회가 있다면 디자인 공부 또한 전문적으로 하고 싶습니다.<br />
+					끊임없이 공부해야 전문성을 유지할 수 있다고 믿는만큼, 계획을 세워 꾸준히 공부할 생각입니다.<br />
+					당당한 한 명의 프론트엔드 개발자가 되는 것이 제 목표입니다.<br />
+
+					<div class="btn_close">닫기</div>
+				</div>
+			</li>
+		</ul>
+	</section>
+	<script>
+		$(function() {
+			$("div.click").click(function() {
+				$(this).siblings("div.aboutme_detail").addClass("active");
+			});
+
+			$("div.btn_close").click(function() {
+				$("div.aboutme_detail").removeClass("active");
+			});
+		});
+	</script>
+
+	<section id="portfolio">
+		<h3 class="section_title">Portfolio</h3>
+
+		<ul class="works">
+			<li id="pfizer" class="active">
+				<a href="sub/pfizer.html" target="blank">
+					<div class="logo">화이자제약</div>
+				</a>
+			</li>
+			<li id="pokemon">
+				<a href="sub/pokemon.html" target="blank">
+					<div class="logo">포켓몬</div>
+				</a>
+			</li>
+			<li id="godiva">
+				<a href="sub/godiva.html" target="blank">
+					<div class="logo">고디바</div>
+				</a>
+			</li>
+			<li id="jsm">
+				<a href="sub/jsm.html" target="blank">
+					<div class="logo">정샘물 뷰티</div>
+				</a>
+			</li>
+			<li id="on_going">
+				<a href="sub/jquery.html">
+					<div class="logo">제작중</div>
+				</a>
+			</li>
+		</ul>
+	</section>
+	<script>
+		$(document).ready(function() {
+			var index = 1;
+			var showWorks = 0;
+
+			function show() {
+				showWorks = setInterval(function() {
+					index++;
+
+					if (index > 5) {
+						index = 1;
+					}
+
+					$(".works li").removeClass("active");
+					$(".works li:nth-child(" + index + ")").addClass("active");
+				}, 4000);
+			}
+
+			$(".works li").hover(function() {
+				clearInterval(showWorks);
+
+				$(".works li").removeClass("active");
+				$(this).addClass("active");
+
+				index = $(".works li").index(this) + 1;
+			}, function() {
+				show();
+			});
+		});
+	</script>
+
+	<section id="contact">
+		<h3 class="section_title">Contact</h3>
+
+		<div id="contact_wrap">
+			<address>
+				<span>TEL. 010 4841 1521</span><br />
+				<span>E-MAIL. thatnight0827@gmail.com</span>
+			</address>
+
+			<form action="https://formspree.io/thatnight0827@gmail.com" method="POST">
+			    <input type="text" name="name" placeholder="이름 또는 회사명">
+			    <input type="email" name="_replyto" placeholder="이메일주소">
+			    <textarea type="text" name="message" placeholder="메세지 내용"></textarea>
+			    <input id="submit" type="submit" value="전송하기">
+			</form>
+		</div>
+	</section>
+
+	<nav id="side_nav">
+		<ul>
+			<li>About me</li>
+			<li>Portfolio</li>
+			<li>contact</li>
+		</ul>
+	</nav>
+	<script>
+		$(function() {
+			$("#side_nav > ul > li").click(function() {
+				var index = $(this).index();
+
+				$('html, body').animate({
+					scrollTop: $('section').eq(index).offset().top
+				}, 400);
+			});
+		});
+	</script>
+	<script>
+		$(function() {
+			setInterval(function() {
+				if ($(window).width() < 767) {
+					if ($(window).scrollTop() >= 568) {
+						$("#side_nav").css({
+							top: 0,
+							transition: "0.3s"
+						});
+					} else {
+						$("#side_nav").css({
+							top: "-50px",
+							transition: "none"
+						});
+					}
+				} else if ($(window).width() < 1367) {
+					if ($(window).scrollTop() >= 900) {
+						$("#side_nav").css({
+							top: 0,
+							transition: "0.3s"
+						});
+					} else {
+						$("#side_nav").css({
+							top: "-50px",
+							transition: "none"
+						});
+					}
+				} else {
+					$("#side_nav").css({
+						top: "50%"
+					});
+				}
+			}, 20);
+		});
+	</script>
+
+</body>
+</html>

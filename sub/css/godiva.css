@@ -1,0 +1,153 @@
+/* jsm.css */
+
+@import url(common.css);
+@import url(master.css);
+
+#header {
+	background: url(../images/godiva_header.jpg) left bottom;
+}
+
+@media screen and (max-width: 766px) {
+	#header {
+		background: #93c5b0;
+	}
+}
+
+	#title {
+		width: 598px;
+		height: 140px;
+
+		background: url(../images/godiva_title.png) no-repeat;
+
+		margin-left: -299px;
+	}
+
+	@media screen and (max-width: 597px) {
+		#title {
+			width: 95%;
+
+			background-size: contain;
+
+			left: 2.5%;
+			margin-left: 0;
+		}
+	}
+
+	#header > a {
+		margin-left: -125px;
+	}
+
+				#color > ul > li:nth-of-type(1) > div {
+					background: #eff7fa;
+
+					border: 1px solid #000;
+					box-sizing: border-box;
+				}
+
+				#color > ul > li:nth-of-type(2) > div {
+					background: #fff;
+
+					border: 1px solid #000;
+					box-sizing: border-box;
+				}
+
+				#color > ul > li:nth-of-type(3) > div {
+					background: #000;
+				}
+
+@media screen and (max-width: 1366px) {
+	.concept {
+		height: 2489px;
+	}
+}
+
+@media screen and (max-width: 766px) {
+	.concept {
+		height: 1330px;
+	}
+}
+
+	.img_wrap > img:nth-of-type(1) {
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+
+	.img_wrap > img:nth-of-type(2) {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+
+	.img_wrap > img:nth-of-type(3) {
+		position: absolute;
+		left: 660px;
+		bottom: 0;
+	}
+
+	@media screen and (max-width: 1366px) {
+		.img_wrap > img:nth-of-type(1) {
+			width: 768px;
+			height: auto;
+
+			left: 50%;
+			margin-left: -384px;
+			top: 0;
+		}
+
+		.img_wrap > img:nth-of-type(2) {
+			position: absolute;
+			right: 50%;
+			margin-right: -33px;
+			top: 481px;
+		}
+
+		.img_wrap > img:nth-of-type(3) {
+			position: absolute;
+			left: 50%;
+			margin-left: 132px;
+			bottom: 67px;
+		}
+	}
+
+	@media screen and (max-width: 766px) {
+		.img_wrap > img:nth-of-type(1) {
+			width: 320px;
+			height: auto;
+
+			left: 50%;
+			margin-left: -160px;
+			top: 0;
+		}
+
+		.img_wrap > img:nth-of-type(2) {
+			width: 150px;
+
+			margin-right: -75px;
+			top: 234px;
+		}
+
+		.img_wrap > img:nth-of-type(3) {
+			width: 100px;
+
+			left: 50%;
+			margin-left: -50px;
+			bottom: 0px;
+		}
+	}
+
+	@media screen and (max-width: 1366px) {
+		.details {
+			height: 946px;
+		}
+	}
+
+#side_nav {
+	height: 150px;
+}
+
+@media screen and (max-width: 1366px) {
+	#side_nav {
+		height: 50px;
+	}
+}

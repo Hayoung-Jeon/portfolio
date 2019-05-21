@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=1.0,  maximum-scale=2.0" />
+
+	<title>전하영의 포트폴리오</title>
+
+	<link rel="shortcut icon" type="image/x-icon" href="images/title_icon.png">
+	<link rel="stylesheet" href="css/pokemon.css" />
+
+	<script src="js/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+
+	<header id="header">
+		<h1 id="title">포켓몬</h1>
+		<a href="../pokemon/index.html" target="_blank">사이트 바로가기</a>
+	</header>
+
+	<div class="section" id="overview">
+		<h3>overview</h3>
+
+		<section id="period">
+			<img src="images/clock.png" alt="제작기간" />
+			<p><strong>production period</strong></p>
+			<p>약 3일 소요 (참여율 100%)</p>
+			<p>메인페이지 : 시안 2일 코딩 1일</p>
+		</section>
+
+		<section id="size">
+			<img src="images/devices.png" alt="화면크기" />
+			<p><strong>website size</strong></p>
+			<p>SMALL : 766px ~</p>
+			<p>MEDIUM : 767px ~ 1366px</p>
+			<p>LARGE : ~ 1367px</p>
+		</section>
+
+		<section id="typo">
+			<p><strong>typography</strong></p>
+			<p>한글(타이틀) : Daum</p>
+			<p>한글 : Noto Sans kr (본고딕)</p>
+		</section>
+
+		<section id="color">
+			<p><strong>color</strong></p>
+			<ul>
+				<li>
+					grayscale (다양한 이미지 활용)
+					<div class="color">grayscale</div>
+				</li>
+			</ul>
+		</section>
+	</div>
+
+	<div class="concept section">
+		<div class="img_wrap">
+			<img src="images/pokemon_laptop.png" alt="PC 버전" />
+			<img src="images/pokemon_tablet.png" alt="tablet 버전" />
+			<img src="images/pokemon_mobile.png" alt="mobile 버전" />
+		</div>
+
+		<h3>concept</h3>
+		<div class="text_wrap">
+			게임 브랜드 포켓몬의 프로모션 사이트를 리뉴얼하였다.<br />
+			포켓몬의 캐릭터 특징을 살리기 위해 캐릭터 특성에 맞는 애니메이션으로 흥미를 유도하였고,<br />
+			그 외에도 컨텐츠 하나하나에 애니메이션을 주어 게임회사다운 재미와 흥미를 선사하였다.
+		</div>
+
+		<div class="details">
+			<img src="images/pokemon_pc_detail.png" alt="pc버전 상세" />
+			<img src="images/pokemon_pc_detail2.png" alt="pc버전 상세2" />
+		</div>
+	</div>
+
+	<footer id="footer">
+		<div class="deco_box"></div>
+
+		<address>
+			<a href="../index.html">홈으로 돌아가기</a>
+			<div class="contact">
+				<ul class="classification">
+					<li>design & publishing</li>
+					<li>phone</li>
+					<li>e-mail</li>
+				</ul>
+
+				<p>design & publishing</p>
+
+				<ul class="detail">
+					<li>전하영</li>
+					<li>010 - 4841 - 1521</li>
+					<li>thatnight0827@gmail.com</li>
+				</ul>
+			</div>
+		</address>
+	</footer>
+
+	<nav id="side_nav">
+		<ul>
+			<li>overview</li>
+			<li>mainpage</li>
+			<li><a href="../index.html">home</a></li>
+		</ul>
+	</nav>
+	<script>
+		$(function() {
+			$("#side_nav > ul > li").click(function() {
+				var index = $(this).index();
+
+				if (index < 2) {
+					$('html, body').animate({
+						scrollTop: $('.section').eq(index).offset().top
+					}, 400);
+				}
+			});
+		});
+	</script>
+	<script>
+		$(function() {
+			setInterval(function() {
+				if ($(window).width() < 767) {
+					if ($(window).scrollTop() >= 568) {
+						$("#side_nav").css({
+							top: 0,
+							transition: "0.3s"
+						});
+					} else {
+						$("#side_nav").css({
+							top: "-50px",
+							transition: "none"
+						});
+					}
+				} else if ($(window).width() < 1367) {
+					if ($(window).scrollTop() >= 900) {
+						$("#side_nav").css({
+							top: 0,
+							transition: "0.3s"
+						});
+					} else {
+						$("#side_nav").css({
+							top: "-50px",
+							transition: "none"
+						});
+					}
+				} else {
+					$("#side_nav").css({
+						top: "50%"
+					});
+				}
+			}, 20);
+		});
+	</script>
+
+</body>

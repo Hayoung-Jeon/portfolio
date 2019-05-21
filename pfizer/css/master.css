@@ -1,0 +1,30 @@
+/* master.css */
+
+@import url(common.css);
+@import url(header.css);
+@import url(content.css);
+@import url(footer.css);
+
+body {
+	background: url(../images/bg_top.gif) repeat-x top left,
+				url(../images/bg.png);
+}
+
+@media screen and (max-width: 766px) {
+	body {
+		background: url(../images/bg_top_m.gif) repeat-x top left,
+				url(../images/bg.png);
+	}
+}
+
+#wrap {
+	width: 100%;
+
+	background: url(../images/bg_bottom.gif) repeat-x bottom left;
+}
+
+@media screen and (max-width: 766px) {
+	#wrap {
+		background: transparent;
+	}
+}

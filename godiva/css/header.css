@@ -1,0 +1,434 @@
+/* header.css */
+
+#header {
+    width: 100%;
+    height: 100px;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    z-index: 200;
+
+    box-shadow: 0 3px 3px rgba(0,0,0,0.2);
+}
+
+/* 메인 메뉴 */
+#main_nav {
+    width: 824px;
+    height: 65px;
+
+    position: absolute;
+    top: 35px;
+    left: 50%;
+    margin-left: -412px;
+}
+
+    #main_nav > ul {
+
+    }
+
+        #main_nav > ul > li {
+            height: 150px;
+
+            float: left;
+
+            text-align: center;
+        }
+
+            #main_nav > ul > li > a {
+                height: 30px;
+
+                font-size: 25px;
+
+                line-height: 30px;
+
+                margin-right: 60px;
+            }
+
+            #main_nav > ul > li:last-child > a {
+                margin-right: 0;
+            }
+
+/* 메인메뉴 Tabelt & Mobile */
+@media screen and (max-width: 1366px) {
+    .toggle_menu {
+        width: 30px;
+        height: 30px;
+
+        background: url(../images/toggle.png) no-repeat 50% 50%;
+
+        position: absolute;
+        top: 35px;
+        right: 50px;
+
+        transition-duration: 0.5s;
+    }
+
+    #toggle_menu:checked + #wrap > #header > .toggle_menu {
+        transform: rotate(90deg);
+    }
+
+    #toggle_menu + #wrap {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    #toggle_menu + #wrap > #header > #main_nav {
+        width: 100%;
+
+        position: absolute;
+        top: 100px;
+        right: -100%;
+        left: 100%;
+        margin-left: 0;
+
+        padding-right: 50px;
+        box-sizing: border-box;
+
+        background: rgba(250, 250, 250, 0.9);
+
+        overflow: auto;
+
+        transition-duration: 0.5s;
+    }
+
+    #toggle_menu:checked + #wrap {
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
+    #toggle_menu:checked + #wrap > #header > #main_nav {
+        right: 0;
+        left: 0;
+    }
+
+    #main_nav > ul {
+        height: auto;
+    }
+
+    #main_nav > ul > li {
+        float: right;
+        width: 100%;
+        height: 80px;
+
+        transition-duration: 0.3s;
+    }
+
+    #main_nav > ul > li > h3 {
+        width: 100%;
+        height: 80px;
+
+        background: url(../images/more.png) no-repeat right 25px;
+
+        padding-right: 50px;
+        box-sizing: border-box;
+
+        font-size: 40px;
+        line-height: 80px;
+        text-align: right;
+    }
+}
+
+@media screen and (max-width: 766px) {
+    .toggle_menu {
+        right: 10px;
+    }
+
+     #toggle_menu + #wrap > #header > #main_nav {
+        padding-right: 30px;
+     }
+
+    #main_nav > ul > li > h3 {
+        background: none;
+
+        padding-right: 0;
+
+        font-size: 30px;
+    }
+}
+
+/* 서브메뉴 */
+#main_nav .sub_menu {
+    width: 200px;
+    background: rgba(250, 250, 250, 0.7);
+
+    margin-top: 10px;
+    box-sizing: border-box;
+
+    position: absolute;
+}
+
+#main_nav > ul > li:nth-of-type(1) > .sub_menu {
+    left: -39px;
+}
+
+#main_nav > ul > li:nth-of-type(2) > .sub_menu {
+    left: 107px;
+}
+
+#main_nav > ul > li:nth-of-type(3) > .sub_menu {
+    left: 259px;
+}
+
+#main_nav > ul > li:nth-of-type(4) > .sub_menu {
+    left: 456px;
+}
+
+#main_nav > ul > li:nth-of-type(5) > .sub_menu {
+    left: 653px;
+}
+
+    #main_nav .sub_menu > li {
+        height: 0px;
+
+        line-height: 30px;
+        box-sizing: border-box;
+
+        overflow: hidden;
+    }
+
+/* 서브메뉴 Tabelt & Mobile */
+@media screen and (max-width: 1366px) {
+    #main_nav > ul > li > .sub_menu {
+        width: 100%;
+
+        background: transparent;
+
+        margin-top: 0;
+    }
+
+    #main_nav > ul > li:nth-of-type(1) > .sub_menu,
+    #main_nav > ul > li:nth-of-type(2) > .sub_menu,
+    #main_nav > ul > li:nth-of-type(3) > .sub_menu,
+    #main_nav > ul > li:nth-of-type(4) > .sub_menu,
+    #main_nav > ul > li:nth-of-type(5) > .sub_menu {
+        left: 0;
+    }
+
+        #main_nav .sub_menu > li {
+            height: 0px;
+            overflow: hidden;
+
+            transition-duration: 0.3s;
+        }
+
+            #main_nav .sub_menu > li > a {
+                font-size: 25px;
+                text-align: right;
+
+                box-sizing: border-box;
+                padding-right: 50px;
+            }
+
+    #toggle_menu + #wrap > #header > #main_nav > #toggle_close {
+        width: 0;
+    }
+
+    #toggle_menu:checked + #wrap > #header > #main_nav > #toggle_close {
+        width: 20%;
+
+        position: fixed;
+        top: 100px;
+        bottom: 0;
+        left: 0;
+
+        background: rgba(239, 247, 250, 0.7);
+
+        transition: 1s;
+    }
+}
+
+@media screen and (max-width: 766px) {
+    #main_nav .sub_menu > li > a {
+        font-size: 20px;
+
+        padding-right: 30px;
+    }
+}
+
+@media screen and (min-width: 1367px) {
+    /* 메인메뉴 롤오버시 서브메뉴 등장 */
+    #main_nav > ul > li:hover > a ~ .sub_menu {
+        padding: 10px 0;
+    }
+
+    #main_nav > ul > li:hover > a ~ .sub_menu > li {
+        height: 30px;
+    }
+
+    /* 서브메뉴 롤오버시 서브메뉴에 배경변화 */
+    #main_nav .sub_menu > li:hover > a {
+        background: rgba(0, 0, 0, 0.7);
+        color: #fff;
+    }
+}
+
+/* 로고 */
+#h_logo {
+    position: absolute;
+    left: 50px;
+    top: 25px;
+}
+
+    #h_logo > a {
+        width: 171px;
+        height: 50px;
+
+        text-indent: -6000px;
+        overflow: hidden;
+
+        background: url(../images/h_logo.png);
+    }
+
+@media screen and (max-width: 766px) {
+    #h_logo {
+        left: 10px;
+        top: 30px;
+    }
+
+        #h_logo > a {
+            width: 137px;
+            height: 40px;
+
+            background: url(../images/m_logo.png);
+        }
+}
+
+/* 로그인, 검색 */
+#util_nav {
+    width: 290px;
+    height: 30px;
+
+    position: absolute;
+    right: 50px;
+    top: 35px;
+}
+
+    #util_nav > ul {
+        height: 100%;
+    }
+
+    #util_nav > ul > li {
+        float: left;
+    }
+
+        #login > a {
+            width: 23px;
+            height: 30px;
+
+            text-indent: -6000px;
+            overflow: hidden;
+
+            background: url(../images/login.png);
+
+            margin-left: 197px;
+            margin-right: 40px;
+        }
+
+    #search {
+        width: 30px;
+        height: 30px;
+    }
+
+    #search > img {
+        cursor: pointer;
+    }
+
+    #search_wrap {
+        width: 0px;
+        height: 40px;
+
+        position: absolute;
+        left: 0;
+        top: -5px;
+
+        overflow: hidden;
+
+        z-index: 150;
+
+        transition-duration: 0.3s;
+    }
+
+    #search_wrap > #txt_search {
+        width: 250px;
+        height: 100%;
+
+        float: left;
+
+        background: #fff;
+
+        box-sizing: border-box;
+        padding: 10px;
+        line-height: 100%;
+    }
+
+    #search_wrap > #btn_search {
+        width: 40px;
+        height: 100%;
+
+        float: left;
+
+        text-indent: -6000px;
+        overflow: hidden;
+
+        position: absolute;
+        top: 0px;
+        left: 255px;
+
+        background: url(../images/search.png) no-repeat;
+        background-position: 50% 50%;
+    }
+
+@media screen and (max-width: 1366px) {
+    #util_nav {
+        right: 120px;
+    }
+}
+
+@media screen and (max-width: 766px) {
+    #util_nav {
+        width: 63px;
+        right: 50px;
+    }
+
+            #login > a {
+                margin-left: 0;
+                margin-right: 10px;
+        }
+
+        #search_wrap {
+            width: 100%;
+            height: 0px;
+
+            position: fixed;
+            left: 0;
+            top: 80px;
+
+            z-index: 50;
+
+            transition-duration: 0.3s;
+        }
+
+            #search_wrap > #txt_search {
+                width: 100%;
+                height: 100%;
+
+                background: #fff;
+            }
+
+            #search_wrap > #btn_search {
+                width: 15%;
+                height: 100%;
+
+                position: absolute;
+                left: 85%;
+                right: 0;
+                top: 0;
+
+                background: url(../images/search.png) no-repeat, #eff7fa;
+                background-position: 50% 50%;
+            }
+}

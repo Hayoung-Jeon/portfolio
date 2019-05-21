@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=1.0, maximum-scale=2.0" />
+
+    <title>고디바 메인페이지</title>
+
+    <link rel="stylesheet" href="css/master.css" />
+    <link rel="stylesheet" type="text/css" href="css/full-page-scroll.css" />
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/jumpMenu.js"></script>
+    <script src="js/jquery.cycle2.min.js"></script>
+    <script src="js/menuSlide.js"></script>
+
+
+</head>
+<body>
+
+  <input id="toggle_menu" type="checkbox" />
+
+   <div id="wrap">
+       <!-- 바로가기 -->
+       <div class="skip">
+           <a href="#main_nav">메인메뉴</a>
+           <a href="#chef">고디바 셰프</a>
+           <a href="#season">시즌 한정 메뉴</a>
+           <a href="#best_sellers">베스트 셀러</a>
+           <a href="#menu">고디바 메뉴 소개</a>
+           <a href="#instagram">인스타그램</a>
+           <a href="#footer">하단메뉴</a>
+       </div>
+
+        <!-- 헤더 -->
+        <header id="header">
+           <label class="toggle_menu" for="toggle_menu"></label>
+
+           <!-- 메인메뉴 -->
+           <nav id="main_nav">
+               <ul>
+                   <li>
+                       <a href="#">What's New</a>
+                       <h3>What's New</h3>
+                       <ul class="sub_menu">
+                           <li><a href="#">시즌한정</a></li>
+                           <li><a href="#">지큐브</a></li>
+                           <li><a href="#">큐브 트뤼프</a></li>
+                           <li><a href="#">골드 디스커버리</a></li>
+                       </ul>
+                   </li>
+                   <li>
+                       <a href="#">Gifts</a>
+                       <h3>Gifts</h3>
+                       <ul class="sub_menu">
+                           <li><a href="#">고디바 컬렉션</a></li>
+                           <li><a href="#">온라인 한정 세트</a></li>
+                       </ul>
+                   </li>
+                   <li>
+                       <a href="#">Godiva Menu</a>
+                       <h3>Godiva Menu</h3>
+                       <ul class="sub_menu">
+                           <li><a href="#">전체 상품</a></li>
+                           <li><a href="#">베스트 셀러</a></li>
+                           <li><a href="#">초콜릿</a></li>
+                           <li><a href="#">초콜릿 스낵 &amp; 드링크</a></li>
+                           <li><a href="#">초콜렉사</a></li>
+                           <li><a href="#">아이스크림</a></li>
+                           <li><a href="#">커피 &amp; 음료</a></li>
+                           <li><a href="#">디저트</a></li>
+                       </ul>
+                   </li>
+                   <li>
+                       <a href="#">News &amp; Event</a>
+                       <h3>News &amp; Event</h3>
+                       <ul class="sub_menu">
+                           <li><a href="#">미디어</a></li>
+                           <li><a href="#">프로모션</a></li>
+                           <li><a href="#">공지사항</a></li>
+                       </ul>
+                   </li>
+                   <li>
+                       <a href="#">About Godiva</a>
+                       <h3>About Godiva</h3>
+                       <ul class="sub_menu">
+                           <li><a href="#">고디바 스토리</a></li>
+                           <li><a href="#">고디바 매장</a></li>
+                       </ul>
+                   </li>
+               </ul>
+               <label id="toggle_close" for="toggle_menu"></label>
+           </nav>
+
+           <!-- 로고 -->
+           <h1 id="h_logo">
+               <a href="#">고디바</a>
+           </h1>
+
+           <!-- 로그인 & 검색 -->
+            <nav id="util_nav">
+                <ul>
+                    <li id="login">
+                       <a href="#">로그인</a>
+                    </li>
+                    <li id="search">
+                        <img src="images/search.png" alt="검색" />
+                        <div id="search_wrap">
+                             <input id="txt_search" type="text" placeholder="검색어를 입력하세요" />
+                             <input id="btn_search" type="button" value="search" />
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+
+            <script>
+              $(function() {
+                var bCheck = true;
+
+                $("#search > img").click(function() {
+                  $("#search_wrap").css({
+                    width: "100%",
+                    height: "40px"
+                  });
+
+                  if($(window).width() > 766) {
+                    $("#search > img").delay(300).hide(0);
+                  } else {
+                    bCheck = !bCheck;
+
+                    if (bCheck) {
+                      $("#search_wrap").css({
+                        height: 0
+                      });
+                    }
+                  }
+                });
+
+                $("#btn_search").click(function() {
+                  $("#search_wrap").css({
+                    width: "0px"
+                  });
+                  $("#search > img").show();
+                });
+              });
+            </script>
+        </header>
+       <!-- //헤더 -->
+
+       <div id="main" class="scroll-container">
+       <!-- 배너 -->
+       <section id="banner" class="section1">
+           <div class="cycle-slideshow">
+
+              <div class="visual_wrap">
+                <div id="visual_img1" class="visual_img"></div>
+                <div class="visual_text">
+                  <h2>'19 화이트데이</h2>
+                  <h3>Season Limited</h3>
+                  <a href="#">자세히보기</a>
+                </div>
+              </div>
+
+
+              <div class="visual_wrap">
+                <div id="visual_img2" class="visual_img"></div>
+                <div class="visual_text">
+                 <h2>고백의 정석</h2>
+                 <h3>GODIVA</h3>
+                 <a href="#">자세히보기</a>
+                </div>
+              </div>
+
+
+              <div class="visual_wrap">
+                <div id="visual_img3" class="visual_img"></div>
+                <div class="visual_text">
+                 <h2>New 지큐브</h2>
+                 <h3>One bite for Crush</h3>
+                 <a href="#">자세히보기</a>
+               </div>
+              </div>
+           </div>
+       </section>
+
+       <!-- 컨텐츠 1 : 셰프 -->
+       <section id="chef" class="section2">
+           <h3 class="section_title">Godiva Chef</h3>
+
+           <div id="chef_wrap">
+               <div id="chef_intro">
+                   <img src="images/chef.png" alt="고디바 셰프" />
+
+                   <ul>
+                       <li>
+                           <p class="en">Chef Philippe</p>
+                           <p class="ko">쉐프 필립</p>
+                       </li>
+                       <li>
+                           <p class="en">Chef Yannik</p>
+                           <p class="ko">쉐프 야닉</p>
+                       </li>
+                       <li>
+                           <p class="en">Chef Ilse</p>
+                           <p class="ko">쉐프 일세</p>
+                       </li>
+                       <li>
+                           <p class="en">Chef Jean</p>
+                           <p class="ko">쉐프 장</p>
+                       </li>
+                       <li>
+                           <p class="en">Chef Thierry</p>
+                           <p class="ko">쉐프 티에리</p>
+                       </li>
+                   </ul>
+               </div>
+
+               <div id="chef_txt">
+                   당신의 마음을 그대로 담아내기 위해,<br />
+                   고디바 쉐프 쇼콜라티에가 직접 선택했습니다.
+               </div>
+           </div>
+           <script>
+              $(function() {
+                setInterval(function() {
+                  if ($(window).outerWidth() < 767) {
+                    $("#chef_txt").html("당신의 마음을 그대로<br /> 담아내기 위해,<br />고디바 쉐프 쇼콜라티에가<br />직접 선택했습니다.");
+                  } else {
+                    $("#chef_txt").html("당신의 마음을 그대로 담아내기 위해,<br />고디바 쉐프 쇼콜라티에가 직접 선택했습니다.");
+                  }
+
+                  $("#chef_wrap").css({
+                    marginTop: -($("#chef_wrap").height()/2 - 100) + "px"
+                  })
+                }, 20);
+              });
+           </script>
+       </section>
+
+       <!-- 컨텐츠 2 : 시즌 한정 -->
+       <section id="season" class="section3">
+           <h3 class="section_title">Season Limited</h3>
+
+          <div id="season_wrap">
+            <div id="item">
+              <div id="item_wrap">
+                 <div class="s_item active">
+                     <img src="images/s_item_01.png" alt="아망데 푀이예틴" />
+                     <h4 class="item_name">아망데 푀이에틴</h4>
+                     <p class="item_chef">by &nbsp; 쉐프 필립 (상하이)</p>
+                 </div>
+
+                 <div class="s_item">
+                     <img src="images/s_item_02.png" alt="피스타치오" />
+                     <h4 class="item_name">피스타치오</h4>
+                     <p class="item_chef">by &nbsp; 쉐프 장 (런던)</p>
+                 </div>
+
+                 <div class="s_item">
+                     <img src="images/s_item_03.png" alt="블랙슈가" />
+                     <h4 class="item_name">블랙슈가</h4>
+                     <p class="item_chef">by &nbsp; 쉐프 야닉 (도쿄)</p>
+                 </div>
+
+                 <div class="s_item">
+                     <img src="images/s_item_04.png" alt="솔티드 캐러멜" />
+                     <h4 class="item_name">솔티드 캐러멜</h4>
+                     <p class="item_chef">by &nbsp; 쉐프 티에리 (뉴욕)</p>
+                 </div>
+
+                 <div class="s_item">
+                     <img src="images/s_item_05.png" alt="라즈베리 오렌지" />
+                     <h4 class="item_name">라즈베리 오렌지</h4>
+                     <p class="item_chef">by &nbsp; 쉐프 일세 (브뤼셀)</p>
+                 </div>
+              </div>
+            </div>
+
+           <div class="btn_next">다음</div>
+           <div class="btn_prev">이전</div>
+
+           <div id="season_txt">2019 고디바 화이트데이 한정 '쉐프의 초이스 컬렉션'</div>
+
+           <a class="find_more" href="#">
+               FIND MORE
+           </a>
+          </div>
+         <script>
+              $(function() {
+                setInterval(function() {
+                  $("#season_wrap").css({
+                    height: ($("#item").height() + $("#season_txt").height() + $("#season_wrap > .find_more").height() + 100) + "px",
+                    marginTop: -($("#season_wrap").height()/2 - 100) + "px"
+                  });
+
+                  if ($(window).width() > 766) {
+                    $("#season_wrap > .btn_next").css({
+                      marginTop: ($("#item img").height() - 119) / 2 + "px"
+                    });
+                    $("#season_wrap > .btn_prev").css({
+                      marginTop: ($("#item img").height() - 119) / 2 + "px"
+                    });
+                  } else {
+                    $("#season_wrap > .btn_next").css({
+                      marginTop: ($("#item").height() - 119) / 2 + "px"
+                    });
+                    $("#season_wrap > .btn_prev").css({
+                      marginTop: ($("#item").height() - 119) / 2 + "px"
+                    });
+                  }
+
+
+                  $("#season_txt").css({
+                    marginTop: ($("#item").height() + 70) + "px"
+                  });
+
+                  if ($(window).width() < 767) {
+                    $("#season_wrap > .find_more").css({
+                      marginTop: ($("#item").height() + 20) + "px"
+                    });
+                  } else {
+                    $("#season_wrap > .find_more").css({
+                      marginTop: "30px"
+                    });
+                  }
+                }, 20);
+              });
+           </script>
+       </section>
+
+
+       <!-- 컨텐츠 3 : 베스트셀러 -->
+       <section id="best_sellers" class="section4">
+           <h3 class="section_title">Best Sellers</h3>
+
+           <div id="best_txt">
+                세계에서 가장 달콤한 나라, 벨기에.<br />
+                초콜렛으로 유명한 벨기에에서 탄생해,<br />
+                전세계에서 꾸준히 사랑 받아온 고디바의<br />
+                자신있는 한 조각을 맛 보세요.<br />
+
+                <a href="#" class="find_more">FIND MORE</a>
+           </div>
+            <script>
+              $(function() {
+                setInterval(function() {
+                  var dWidth = $("#best_txt").width();
+                  var dPadding = (dWidth - 165) / 2;
+
+                  if ($(window).width() < 767) {
+                    $("#best_txt").css({
+                      height: dWidth + "px",
+                      paddingTop: dPadding + "px"
+                    });
+                  } else if ($(window).width() < 1165) {
+                      $("#best_txt").css({
+                        height: "400px",
+                        paddingTop: "40px"
+                      });
+                  } else if ($(window).width() < 1366) {
+                      $("#best_txt").css({
+                        height: "400px",
+                        paddingTop: "70px"
+                      });
+                  } else {
+                      $("#best_txt").css({
+                        height: "500px",
+                        paddingTop: "100px"
+                      });
+                  }
+                }, 20);
+              });
+            </script>
+
+       </section>
+
+       <!-- 컨텐츠 4 : 메뉴 -->
+       <section id="menu" class="section5">
+           <h3 class="section_title">Godiva Menu</h3>
+
+            <div id="menu_txt">
+               <ul>
+                   <li>골드 컬렉션</li>
+                   <li>골드 디스커버리</li>
+                   <li>큐브 트뤼프</li>
+                   <li>초콜렉사</li>
+                   <li>아이스크림</li>
+                   <li>디저트 &amp; 커피</li>
+               </ul>
+           </div>
+
+           <div id="menu_wrap">
+               <ul>
+                   <li class="m_r_5p m_b_5p">
+                      <img src="images/menu_01.jpg" alt="골드 컬렉션">
+                      <p class="menu_detail">골드 컬렉션</p>
+                      <a href="#" class="menu_hover">
+                        <span>고디바 특유의<br /> 몰딩을 사용한<br /> 시그니처 제품</span>
+                      </a>
+                      <a href="#" class="img_hover">
+                        <span>고디바 특유의<br /> 몰딩을 사용한<br /> 시그니처 제품</span>
+                      </a>
+                   </li>
+                   <li class="m_r_5p m_b_5p">
+                      <img src="images/menu_02.jpg" alt="골드 디스커버리">
+                      <p class="menu_detail">골드 디스커버리</p>
+                      <a href="#" class="menu_hover">
+                        <span>화려하고 다양한 모양의<br /> 모던한 초콜렛</span>
+                      </a>
+                      <a href="#" class="img_hover">
+                        <span>화려하고 다양한 모양의<br /> 모던한 초콜렛</span>
+                      </a>
+                   </li>
+                   <li class="m_b_5p">
+                      <img src="images/menu_03.jpg" alt="큐브 트뤼프">
+                      <p class="menu_detail">큐브 트뤼프</p>
+                      <a href="#" class="menu_hover">
+                        <span>다양한 식감과<br />뛰어난 풍미의<br />큐브 초콜렛</span>
+                      </a>
+                      <a href="#" class="img_hover">
+                        <span>다양한 식감과<br />뛰어난 풍미의<br />큐브 초콜렛</span>
+                      </a>
+                   </li>
+                   <li class="m_r_5p">
+                      <img src="images/menu_04.jpg" alt="초콜렉사">
+                      <p class="menu_detail">초콜렉사</p>
+                      <a href="#" class="menu_hover">
+                        <span>초콜릿을 직접 갈아만든<br />리얼 초콜릿 음료</span>
+                      </a>
+                      <a href="#" class="img_hover">
+                        <span>초콜릿을 직접 갈아만든<br />리얼 초콜릿 음료</span>
+                      </a>
+                   </li>
+                   <li class="m_r_5p">
+                      <img src="images/menu_05.jpg" alt="아이스크림">
+                      <p class="menu_detail">아이스크림</p>
+                      <a href="#" class="menu_hover">
+                        <span>부드러운 식감의<br />깊고 진한<br />아이스크림</span>
+                      </a>
+                      <a href="#" class="img_hover">
+                        <span>부드러운 식감의<br />깊고 진한<br />아이스크림</span>
+                      </a>
+                   </li>
+                   <li>
+                      <img src="images/menu_06.jpg" alt="디저트 & 커피">
+                      <p class="menu_detail">디저트 &amp; 커피</p>
+                      <a href="#" class="menu_hover">
+                        <span>프리미엄 디저트와<br />스페셜티 원두<br />로스팅 커피</span>
+                      </a>
+                      <a href="#" class="img_hover">
+                        <span>프리미엄 디저트와<br />스페셜티 원두<br />로스팅 커피</span>
+                      </a>
+                   </li>
+               </ul>
+           </div>
+           <script>
+              $(function() {
+                $("#menu_txt > ul > li").hover(function() {
+                  var index = $(this).index();
+
+                  $("#menu_wrap > ul > li").eq(index).children("a.menu_hover").css({
+                    opacity: 1,
+                    transition: "opacity 1s linear"
+                  });
+                }, function() {
+                  $("#menu_wrap > ul > li > a").css({
+                    opacity: 0,
+                    transition: "none"
+                  });
+                });
+
+                $("#menu_wrap > ul > li").hover(function() {
+                  $(this).children("a.menu_hover").css({
+                    opacity: 1,
+                    transition: "opacity 1s linear"
+                  });
+                }, function() {
+                  $("#menu_wrap > ul > li > a").css({
+                    opacity: 0,
+                    transition: "none"
+                  });
+                });
+
+                setInterval(function() {
+                  $("#menu_wrap").css({
+                    marginTop: -($("#menu_wrap").height()/2 - 50) + "px"
+                  });
+
+                  $("#menu_txt").css({
+                    marginTop: -($("#menu_txt").height()/2 - 100) + "px"
+                  });
+
+                  if ($(window).width() > 1366) {
+                    $("#menu > .section_title").css({
+                      marginTop: -($("#menu_wrap").height()/2 - 70) + "px"
+                    });
+                  } else {
+                    $("#menu > .section_title").css({
+                      marginTop: "0px"
+                    });
+                  }
+
+                  if ($(window).width() > 766) {
+                    $("#menu_wrap > ul > li").css({
+                      height: $("#menu_wrap > ul > li").width() + "px"
+                    });
+                  } else {
+                    $("#menu_wrap > ul > li").css({
+                      height: "220px"
+                    });
+                  }
+
+                  $("#menu_wrap > ul > li > p").css({
+                    marginTop: $("#menu_wrap > ul > li > img").height() + 10 + "px"
+                  });
+                }, 20);
+              });
+           </script>
+
+           <div class="btn_next">다음</div>
+           <div class="btn_prev">이전</div>
+       </section>
+
+       <!-- 컨텐츠 5 : 인스타그램 -->
+       <section id="instagram" class="section6">
+           <h3 class="section_title">Instagram</h3>
+
+           <div id="insta_wrap">
+               <ul>
+                   <li><a href="#">고디바 인스타그램</a></li>
+                   <li><a href="#">고디바 인스타그램</a></li>
+                   <li><a href="#">고디바 인스타그램</a></li>
+                   <li><a href="#">고디바 인스타그램</a></li>
+                   <li><a href="#">고디바 인스타그램</a></li>
+                   <li><a href="#">고디바 인스타그램</a></li>
+                   <li><a href="#">고디바 인스타그램</a></li>
+                   <li><a href="#">고디바 인스타그램</a></li>
+                   <li><a href="#">고디바 인스타그램</a></li>
+                   <li><a href="#">고디바 인스타그램</a></li>
+               </ul>
+           </div>
+       </section>
+       <script>
+        $(function() {
+          setInterval(function() {
+            $("#insta_wrap").css({
+              marginTop: -($("#insta_wrap").height() / 2 -100) + "px"
+            });
+
+            $("#insta_wrap > ul > li").css({
+              height: $("#insta_wrap > ul > li").width() + "px"
+            })
+          }, 20);
+        });
+       </script>
+
+        <!-- 푸터 -->
+       <section id="footer">
+          <img src="images/footer_title.png" alt="90년 역사의 한결같은 초콜릿 브랜드 'godiva'" />
+           <h3 id="f_logo"><a href="#">고디바</a></h3>
+           <ul>
+               <li>
+                   <h4>SITEMAP</h4>
+                   <ul>
+                       <li><a href="#">사이트맵</a></li>
+                       <li><a href="#">개인정보 취급방침</a></li>
+                       <li><a href="#">사업자 정보</a></li>
+                       <li><a href="#">마케팅 제휴 / 매장 오픈</a></li>
+                   </ul>
+               </li>
+               <li>
+                   <h4>CUSTOMER SERVICE</h4>
+                   <ul>
+                       <li><a href="#">고객센터</a></li>
+                       <li><a href="#">FAQ</a></li>
+                       <li><a href="#">1:1 문의</a></li>
+                       <li><a href="#">주문 / 배송 / 대량구매</a></li>
+                   </ul>
+               </li>
+               <li>
+                   <h4>OPENING TIME</h4>
+                   <ul>
+                       <li><a href="#">TEL. 080 - 827 - 7700</a></li>
+                       <li><a href="#">평일 AM 10:00 - PM 6:00</a></li>
+                       <li><a href="#">점심시간 PM 12:00 - 2:00</a></li>
+                       <li><a href="#">토, 일, 공휴일 휴무</a></li>
+                   </ul>
+               </li>
+               <li>
+                   <h4>CONNECT WITH US</h4>
+               </li>
+           </ul>
+
+           <!-- 회원가입 -->
+           <div id="join_wrap">
+               <input id="txt_join" type="text" placeholder="E-MAIL Address" />
+               <input id="btn_join" type="button" value="JOIN" />
+           </div>
+
+           <address id="footer_txt">
+                (주)비에스케이코퍼레이션 | 대표이사 : 박종호 | 서울시 강남구 학동로 401 13층 | 개인정보관리책임자 : 박주영 | 개인정보보호 담당부서 고디바 e-commerce팀<br />
+                전화번호 080-827-7700 (수신자 부담) | 팩스번호 02-759-0788 | E-MAIL info@godiva.kr | 문의시간 오전 10시-오전12시, 오후 2시- 오후6시<br />
+                공정거래위원회 고시 제 2000-1호에 따른 사업자등록번호 116-81-62784
+                통신판매업신고번호 제 2010-서울강남-02017호 3 | <a href="#">사업자정보확인</a>
+           </address>
+       </section>
+
+       </div>
+        <script src="js/full-page-scroll.js"></script>
+        <script type="text/javascript">
+          new fullScroll({
+            displayDots: true,
+            dotsPosition: 'left',
+            animateTime: 0.7,
+            animateFunction: 'ease'
+          });
+        </script>
+        <script>
+            $(function() {
+                setInterval(function() {
+                    var sHeight = $(window).innerHeight();
+
+                    if (sHeight > 1080) {
+                      sHeight = 1080;
+                    }
+
+                    $(".scroll-container").css({
+                      height: sHeight + "px"
+                    });
+                    $("section").css({
+                      height: sHeight + "px",
+                    });
+
+                    for (i = 0; i < $("section").length; i++) {
+                      $("section").eq(i).css({
+                        top: sHeight * i + "px"
+                      });
+                    }
+                }, 20);
+            });
+        </script>
+   </div>
+</body>
+</html>

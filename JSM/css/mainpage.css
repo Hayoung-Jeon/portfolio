@@ -1,0 +1,22 @@
+/* mainpage.css */
+
+@import url(common.css);
+@import url(header.css);
+@import url(mainNav.css);
+@import url(banner.css);
+@import url(section.css);
+@import url(footer.css);
+@import url(tabbar.css);
+
+body {
+    width: 100%;
+
+    background: url(../images/bg_bottom.png) no-repeat left bottom #000;
+    background-size: 100%;
+}
+
+#footer {
+    width: 1248px;
+
+    background: linear-gradient(to left, transparent, #000, transparent);
+}

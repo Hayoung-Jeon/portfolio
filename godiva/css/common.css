@@ -1,0 +1,132 @@
+/* common.css */
+@import url(font.css);
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    width: 100%;
+}
+
+html, body {
+    font: 18px / normal 'Crimson Text', 'JejuMyeongjo', serif;
+    color: #000;
+}
+
+table, tr, th, td, input, select, option, textarea, button {
+    font: 18px / normal 'Crimson Text', 'JejuMyeongjo', serif;
+    color: #000;
+}
+
+input, select, option, textarea, button{
+	font: 18px / normal 'Crimson Text', 'JejuMyeongjo', serif;
+	color: #000;
+	border: 0 none;
+    outline: none;
+	background: transparent;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 1.0rem;
+    font-weight: normal;
+}
+
+b, strong {
+    font-weight: normal;
+}
+
+i, em, address {
+    font-style: normal;
+}
+
+img, iframe, frameset, fieldset {
+    border: 0 none;
+}
+
+table, tr, th, td {
+    border-collapse: collapse;
+}
+
+ul, ol, li {
+    list-style: none;
+}
+
+img, a, input, button, select {
+    display: block;
+}
+
+hr, legend, caption {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+input[type=radio], input[type=checkbox] {
+    display: none;
+}
+
+/**** CLASS **********************************/
+.skip, .blind {
+    display: block;
+    height: 0;
+    overflow: hidden;
+
+    position: absolute;
+    top: -6000px;
+}
+
+.ko {
+    font-family: 'JejuMyeongjo', serif;
+}
+
+.en {
+    font-family: 'Crimson Text', serif;
+}
+
+/** @media **/
+/* PC */
+@media screen and (min-width: 1367px) {
+    .toggle_menu,
+    #toggle_close,
+    #main_nav h3,
+    #menu .btn_next,
+    #menu .btn_prev,
+    .menu_detail {
+        display: none;
+    }
+}
+
+/* Tablet & Moblie */
+@media screen and (max-width: 1366px) {
+    #main_nav > ul > li > a,
+    .menu_hover,
+    .img_hover,
+    #menu_txt,
+    .menu_hover > span,
+    .img_hover,
+    .dots-left {
+        display: none;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 767px) and (max-width: 1366px) {
+    #menu .btn_next,
+    #menu .btn_prev {
+        display: none;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 766px) {
+	#toggle_close,
+    #chef_intro > ul {
+		display: none;
+	}
+}
+

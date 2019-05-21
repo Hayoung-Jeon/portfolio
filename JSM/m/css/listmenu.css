@@ -1,0 +1,120 @@
+/* listmenu.css */
+
+.item_wrap > ul > li {
+    width: 100%;
+    height: 50%;
+    
+    overflow: hidden;
+    
+    margin-bottom: 30px;
+}
+
+.item_wrap > ul > li:last-child {
+    margin-bottom: 0;
+}
+
+.item_wrap > ul > li > a {
+    width: 100%;
+    height: 160px;
+    
+    color: #000;
+    
+    position: relative;
+    
+    overflow: hidden;
+}
+
+.item_wrap > ul > li > a > div.img {
+    float: left;
+    
+    width: 160px;
+    height: 160px;
+    
+    position: relative;    
+}
+
+.item_wrap > ul > li > a > div.img > img {
+    width: 160px;
+    height: 160px;
+    
+    position: absolute;
+    left: 0;
+    
+    z-index: 30;
+    
+    border-right: 1px solid #000;
+    box-sizing: border-box;
+}
+
+.item_wrap > ul > li > a > div.detail {
+    width: 100%;
+    height: 160px;
+    
+    position: absolute;
+    left: 0;
+    
+    font-family: "Noto Sans Kr";
+    font-weight: 300;
+    color: #000;
+    
+    text-align: left;
+    
+    border-right: 1px solid #000;
+    box-sizing: border-box;
+}
+
+.item_wrap > ul > li > a > div.detail > .item_name {
+    width: 100%;
+    height: 30px;
+    
+    border-top: 1px solid #000;
+    
+    line-height: 30px;
+    padding-left: 165px;
+    box-sizing: border-box;
+    
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.item_wrap > ul > li > a > div.detail > .item_price {
+    width: 100%;
+    height: 30px;
+    
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    
+    line-height: 30px;
+    padding-left: 165px;
+    box-sizing: border-box;
+}
+
+.item_wrap > ul > li > a > div.detail > .item_detail {
+    width: 100%;
+    height: 70px;
+    
+    border-bottom: 1px solid #000;
+    
+    padding: 4px 5px 5px 165px;
+    box-sizing: border-box;
+    
+    overflow: hidden;
+    white-space: normal;
+    line-height: 1.5;
+    word-wrap: break-word;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.item_wrap > ul > li > a > div.detail > .item_review {
+    width: 100%;
+    height: 30px;
+    
+    border-bottom: 1px solid #000;
+    
+    line-height: 30px;
+    padding-left: 165px;
+    box-sizing: border-box;
+}

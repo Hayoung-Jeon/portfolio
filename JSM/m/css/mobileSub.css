@@ -1,0 +1,22 @@
+/* mobileSub.css */
+
+@import url(common.css);
+@import url(header.css);
+@import url(toggle.css);
+@import url(tabbar.css);
+@import url(footer.css);
+@import url(user.css);
+
+#main {
+    width: 100%;
+    
+    color: #000;
+    font-weight: 300;
+    
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+#wrap {
+    width: 100%;
+}

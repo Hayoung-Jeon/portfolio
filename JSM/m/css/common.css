@@ -1,0 +1,76 @@
+@import url(font.css);
+@import url(https://fonts.googleapis.com/css?family=M+PLUS+1p);
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+/* common.css */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    width: 100%;
+}
+
+html, body {
+    font: 14px 'sofiapro-light', "Noto Sans KR", sans-serif;
+    color: #fff;
+}
+
+table, tr, th, td, input, select, option, textarea, button {
+    font: 14px 'sofiapro-light', "Noto Sans KR", sans-serif;
+    color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 1.0rem;
+    font-weight: normal;
+}
+
+b, strong {
+    font-weight: normal;
+}
+
+i, em, address {
+    font-style: normal;
+}
+
+img, iframe, frameset, fieldset, input, select, option, textarea, button {
+    border: 0 none;
+}
+
+table, tr, th, td {
+    border-collapse: collapse;
+}
+
+ul, ol, li {
+    list-style: none;
+}
+
+img, a, input, button, select, section {
+    display: block;
+}
+
+hr, legend, caption {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+input[type=radio], input[type=checkbox] {
+    display: none;
+}
+
+/**** CLASS **********************************/
+.skip, .blind {
+    display: block;
+    height: 0;
+    overflow: hidden;
+
+    position: absolute;
+    top: -6000px;
+}

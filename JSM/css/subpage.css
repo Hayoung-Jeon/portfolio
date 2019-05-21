@@ -1,0 +1,13 @@
+/* subpage.css */
+
+@import url(common.css);
+@import url(header.css);
+@import url(mainNav.css);
+@import url(tabbar.css);
+@import url(footer.css);
+
+body {
+    width: 100%;
+
+    background: url(../images/bg_top.gif) repeat-x #fff;
+}

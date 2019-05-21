@@ -1,0 +1,184 @@
+/* jquery.css */
+
+@import url(common.css);
+@import url(master.css);
+
+#header {
+	background: url(../images/jquery_header.jpg) left bottom;
+}
+
+@media screen and (max-width: 766px) {
+	#header {
+		background: #93c5b0;
+	}
+}
+
+#title {
+		width: 781px;
+		height: 184px;
+
+		background: url(../images/jquery_title.png) no-repeat;
+
+		margin-left: -390px;
+}
+
+@media screen and (max-width: 597px) {
+	#title {
+		width: 95%;
+
+		background-size: contain;
+
+		left: 2.5%;
+		margin-left: 0;
+	}
+}
+
+#signup {
+	width: 100%;
+	height: auto !important;
+
+	padding-bottom: 100px;
+
+	background: url(../images/border_line.gif) no-repeat 50% bottom;
+
+	padding-top: 100px;
+}
+
+	#signup > h3 {
+		width: 100%;
+
+		font-size: 40px;
+		font-weight: 400;
+		letter-spacing: 10px;
+
+		text-transform: uppercase;
+		text-align: center;
+	}
+
+.explain {
+	width: 70%;
+
+	font-size: 20px;
+
+	text-align: center;
+	line-height: 40px;
+
+	margin: 100px 15%;
+}
+
+#signup form {
+	width: 60%;
+	margin: 0 20%;
+}
+
+#signup form li {
+	width: 100%;
+
+	overflow: hidden;
+
+	display: block;
+
+	margin-bottom: 50px;
+
+	position: relative;
+}
+
+	#signup form div {
+		width: 75%;
+		margin-left: 25%;
+
+		line-height: 30px;
+		margin-bottom: 10px;
+
+		padding: 0 10px;
+	}
+
+	#signup form label,
+	#signup form input {
+		float: left;
+	}
+
+	#signup form label {
+		width: 20%;
+		text-align: right;
+
+		line-height: 50px;
+	}
+
+	#signup form input {
+		width: 75%;
+		height: 50px;
+		margin-left: 5%;
+
+		padding: 10px;
+
+		border: 2px solid #335e5e;
+		border-radius: 10px;
+		box-sizing: border-box;
+
+		letter-spacing: 2px;
+	}
+
+	#signup form span {
+		position: relative;
+
+		display: block;
+		float: left;
+
+		width: 20%;
+
+		margin-left: 5%;
+	}
+
+	#signup form span:nth-of-type(1) {
+		width: 25%;
+	}
+
+	#signup form span > input {
+		width: 100%;
+		margin-left: 0;
+	}
+
+	#signup form input:disabled {
+		background: #ddd;
+	}
+
+	#signup form input::-webkit-input-placeholder { /* Edge */
+		letter-spacing: 2px;
+	}
+
+	#signup form input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+		letter-spacing: 2px;
+	}
+
+	#signup form input::placeholder {
+		letter-spacing: 2px;
+	}
+
+	#signup form input.is-invalid {
+		border: 2px solid #DD1923;
+	}
+
+	#signup form input.is-valid {
+		border: 2px solid #008000;
+	}
+
+	#signup form i.fa-times {
+		position: absolute;
+		right: 12px;
+
+		font-size: 25px;
+		color: #DD1923;
+
+		line-height: 50px;
+	}
+
+	#signup form i.fa-check {
+		position: absolute;
+		right: 12px;
+
+		font-size: 25px;
+		color: #008000;
+
+		line-height: 50px;
+	}

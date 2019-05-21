@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text');
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif+KR');
+
+@font-face {
+    font-family: 'JejuMyeongjo';
+    src: url('fonts/JejuMyeongjo.ttf') format('ttf'),
+    	url('fonts/JejuMyeongjo.woff2') format('woff2'),
+        url('JejuMyeongjo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

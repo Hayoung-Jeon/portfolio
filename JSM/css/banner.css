@@ -1,0 +1,75 @@
+/* banner.css */
+
+#banner {
+    width: 100%;
+    min-width: 1248px;
+    height: 631px;
+
+    position: relative;
+
+    margin-top: 45px;
+}
+
+    #img_wrap {
+        width: 1248px;
+        height: 631px;
+
+        margin: 0 auto;
+
+        overflow: hidden;
+
+        position: relative;
+    }
+
+        #img_wrap > ul {
+            width: 1248px;
+
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+            #img_wrap > ul > li {
+                float: left;
+
+                width: 1248px;
+
+                position: absolute;
+                left: 1248px;
+                top: 0;
+            }
+
+    #banner > button {
+        position: absolute;
+
+        top: 50%;
+        margin-top: -25px;
+
+        width: 43px;
+        height: 50px;
+
+        outline: none;
+
+        text-indent: -6000px;
+        overflow: hidden;
+
+        opacity: 0.5;
+
+        cursor: pointer;
+    }
+
+    #banner > button:hover {
+        opacity: 1;
+    }
+
+    #banner > button.btn_next {
+        background: url(../images/bannerNext.png);
+
+        right: 150px;
+    }
+
+    #banner > button.btn_prev {
+        background: url(../images/bannerPrev.png);
+
+        left: 150px;
+    }

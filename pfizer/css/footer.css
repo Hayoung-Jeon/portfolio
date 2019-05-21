@@ -1,0 +1,174 @@
+/* footer.css */
+
+#footer {
+	width: 1367px;
+	height: 200px;
+
+	margin: 0 auto;
+
+	position: relative;
+}
+
+@media screen and (max-width: 1383px) {
+	#footer {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 766px) {
+	#footer {
+		width: 100%;
+		height: 130px;
+	}
+}
+
+#upper_footer {
+	width: 100%;
+	height: 70px;
+
+	background: #333;
+
+	box-sizing: border-box;
+	padding-left: 40px;
+}
+
+#upper_footer > ul {
+	overflow: hidden;
+}
+
+#upper_footer > ul > li {
+	float: left;
+
+	font-size: 14px;
+
+	color: #fff;
+
+	margin-right: 40px;
+	line-height: 70px;
+}
+
+@media screen and (max-width: 1383px) {
+	#upper_footer {
+		padding-left: 0;
+	}
+
+	#upper_footer > ul {
+		width: 720px;
+
+		position: absolute;
+		left: 50%;
+		margin-left: -360px;
+	}
+
+	#upper_footer > ul > li {
+		float: left;
+
+		font-size: 14px;
+
+		color: #fff;
+
+		margin-right: 40px;
+		line-height: 70px;
+	}
+
+	#upper_footer > ul > li:last-child {
+		margin-right: 0;
+	}
+}
+
+@media screen and (max-width: 766px) {
+	#upper_footer {
+		display: none;
+	}
+}
+
+#lower_footer {
+	width: 100%;
+	height: 130px;
+
+	background: #04243a;
+}
+
+#f_logo {
+	width: 145px;
+	height: 84px;
+
+	position: absolute;
+	left: 40px;
+	top: 93px;
+}
+
+#f_logo > a {
+	width: 145px;
+	height: 84px;
+
+	background: url(../images/f_logo.png);
+
+	text-indent: -6000px;
+	overflow: hidden;
+}
+
+#lower_footer > ul {
+	position: absolute;
+	right: 40px;
+	top: 93px;
+}
+
+#lower_footer > ul > li {
+	float: left;
+	margin-right: 40px;
+
+	font-size: 16px;
+	color: #fff;
+}
+
+#lower_footer > ul > li:last-child {
+	margin-right: 0;
+}
+
+#lower_footer > address {
+	color: #ccc;
+	font-size: 14px;
+
+	position: absolute;
+	right: 40px;
+	bottom: 23px;
+
+	text-align: right;
+}
+
+@media screen and (max-width: 1383px) {
+	#lower_footer > ul {
+		width: 400px;
+
+		top: 110px;
+	}
+
+	#lower_footer > ul > li {
+		width: 400px;
+
+		text-align: right;
+
+		margin-right: 0;
+	}
+
+	#lower_footer > address {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 766px) {
+	#f_logo {
+		width: 145px;
+		height: 84px;
+
+		position: absolute;
+		left: 50%;
+		margin-left: -72px;
+		top: 23px;
+	}
+
+	#lower_footer > ul {
+		display: none;
+	}
+}

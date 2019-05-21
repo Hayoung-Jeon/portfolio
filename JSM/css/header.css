@@ -1,0 +1,101 @@
+/* header.css */
+
+#header {
+    width: 1248px;
+    height: 157px;
+
+    background: #000;
+
+    margin: 0 auto;
+
+    position: relative;
+}
+
+    #global_wrap {
+        position: absolute;
+        top: 15px;
+        right: 18px;
+    }
+
+        #global_wrap > ul {
+            overflow: hidden;
+        }
+
+            #global_wrap > ul > li,
+            #global_wrap > ul > span {
+                float: left;
+            }
+
+            #global_wrap > ul > li > a {}
+
+            #global_wrap > ul > li:nth-of-type(2),
+            #global_wrap > ul > li:nth-of-type(3) {
+                font-family: 'M PLUS 1p';
+            }
+
+            #global_wrap > ul > span {
+                margin: 0 7px;
+            }
+
+                #global_wrap > ul > li > a {}
+
+    #h_logo {
+        width: 145px;
+        height: 145px;
+
+        position: absolute;
+        top: 5px;
+        left: 50%;
+        margin-left: -72px;
+    }
+
+        #h_logo > a {
+            width: 145px;
+            height: 145px;
+
+            background: url(../images/h_logo.jpg);
+
+            text-indent: -6000px;
+            overflow: hidden;
+        }
+
+    #top_nav {
+        position: absolute;
+        top: 39px;
+        right: 18px;
+    }
+
+        #top_nav > ul {
+            overflow: hidden;
+        }
+
+            #top_nav > ul > li {
+                float: left;
+                padding-left: 12px;
+            }
+
+            #top_nav > ul > li:nth-child(3) {
+                padding-left: 10px;
+            }
+
+                #top_nav > ul > li > a {
+                    width: 14px;
+                    height: 14px;
+
+                    text-indent: -6000px;
+                    overflow: hidden;
+
+                    background: url(../images/h_login.png);
+                }
+
+                #top_nav > ul > li:nth-child(1) > a {
+                    width: 12px;
+                }
+
+                #top_nav > ul > li:nth-child(2) > a {
+                    background: url(../images/h_signup.png);
+                }
+
+                #top_nav > ul > li:nth-child(3) > a {
+                    background: url(../images/h_shop.png);
+                }

@@ -1,0 +1,114 @@
+/* common.css */
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    width: 100%;
+}
+
+html, body {
+    font: 18px 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+}
+
+table, tr, th, td, input, select, option, textarea, button {
+    font: 18px 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+}
+
+input, select, option, textarea, button{
+    font: 18px 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    border: 0 none;
+    outline: none;
+    background: transparent;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 1.0rem;
+    font-weight: 300;
+}
+
+b, strong {
+    font-weight: 300;
+}
+
+i, em, address {
+    font-style: normal;
+}
+
+img, iframe, frameset, fieldset {
+    border: 0 none;
+}
+
+table, tr, th, td {
+    border-collapse: collapse;
+}
+
+ul, ol, li {
+    list-style: none;
+}
+
+img, a, input, button, select {
+    display: block;
+}
+
+hr, legend, caption {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+input[type=radio], input[type=checkbox] {
+    display: none;
+}
+
+/**** CLASS **********************************/
+.skip, .blind {
+    display: block;
+    height: 0;
+    overflow: hidden;
+
+    position: absolute;
+    top: -6000px;
+}
+
+/** @media **/
+/* PC */
+@media screen and (min-width: 1384px) {
+    a.btn_trailer,
+    #boy,
+    #girl {
+        display: none;
+    }
+}
+
+/* Tablet & Moblie */
+@media screen and (max-width: 1383px) {
+
+}
+
+/* Tablet */
+@media screen and (min-width: 767px) and (max-width: 1383px) {
+    #boy,
+    #girl {
+        display: none;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 766px) {
+    #main_nav,
+    div.btn_trailer,
+    div.logo_switch,
+    .dark {
+        display: none;
+    }
+}

@@ -1,0 +1,229 @@
+/* banner.css */
+#banner {
+    width: 100%;
+
+    position: absolute;
+
+    box-sizing: border-box;
+    padding-top: 100px;
+}
+
+    #banner > .cycle-slideshow {
+        width: 100%;
+        height: 100%;
+
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+
+        overflow: hidden;
+    }
+
+        #banner > .cycle-slideshow > div {
+            width: 100%;
+            height: 100%;
+
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+
+            #banner > .cycle-slideshow > .visual_wrap > .visual_img {
+                width: 100%;
+                height: 100%;
+
+                transform: scale(1.05) rotate(0.01deg);
+                transition: transform 4s ease-in;
+            }
+
+            #banner > .cycle-slideshow > .cycle-slide-active > .visual_img {
+                transform: scale(1.0) rotate(0deg);
+            }
+
+            #visual_img1 {
+                background: url(../img/visual_01.jpg);
+                background-position: right bottom;
+                background-size: cover;
+            }
+
+            #visual_img2 {
+                background: url(../img/visual_02.jpg);
+                background-position: right bottom;
+                background-size: cover;
+            }
+
+            #visual_img3 {
+                background: url(../img/visual_03.jpg);
+                background-position: right bottom;
+                background-size: cover;
+            }
+
+@media screen and (max-width: 1366px) {
+    #visual_img1 {
+        background: url(../img/visual_t01.jpg);
+        background-position: right bottom;
+        background-size: cover;
+    }
+
+    #visual_img2 {
+        background: url(../img/visual_t02.jpg);
+        background-position: right bottom;
+        background-size: cover;
+    }
+
+    #visual_img3 {
+        background: url(../img/visual_t03.jpg);
+        background-position: right bottom;
+        background-size: cover;
+    }
+}
+
+@media screen and (max-width: 766px) {
+    #visual_img1 {
+        background: url(../img/visual_m01.jpg);
+        background-position: right bottom;
+        background-size: cover;
+    }
+
+    #visual_img2 {
+        background: url(../img/visual_m02.jpg);
+        background-position: right bottom;
+        background-size: cover;
+    }
+
+    #visual_img3 {
+        background: url(../img/visual_m03.jpg);
+        background-position: right bottom;
+        background-size: cover;
+    }
+}
+
+#banner .visual_text {
+    width: 400px;
+    height: 165px;
+
+    position: absolute;
+    top: 50%;
+    margin-top: 18px;
+    left: 20%;
+    margin-left: -200px;
+
+    opacity: 0;
+
+    text-align: center;
+}
+
+#banner > .cycle-slideshow > .cycle-slide-active > .visual_text {
+    transform: translate3d(0, -100px, 0);
+    transition: transform 3s linear, opacity 2s 1s ease-in-out;
+
+    opacity: 1;
+}
+
+    #banner .visual_text > h2 {
+        height: 60px;
+
+        font-size: 60px;
+        line-height: 60px;
+    }
+
+    #banner .visual_text > h3 {
+        height: 40px;
+
+        font-size: 40px;
+        line-height: 40px;
+
+        margin-top: 10px;
+    }
+
+    #banner .visual_text > a {
+        height: 25px;
+        width: 131px;
+
+        margin-top: 30px;
+        margin-left: 134px;
+
+        font-size: 25px;
+        line-height: 25px;
+
+        padding-left: 20px;
+
+        background: url(../images/bg_bannerHref.png) no-repeat;
+        background-size: 17px 20px;
+        background-position: left 50%;
+    }
+
+@media screen and (max-width: 1366px) {
+    #banner .visual_text {
+        width: 700px;
+        height: 40px;
+
+        position: absolute;
+        top: 250px;
+        left: 50%;
+        margin-left: -350px;
+
+        opacity: 0;
+
+        text-align: center;
+    }
+
+    #banner .visual_text > h2,
+    #banner .visual_text > h3,
+    #banner .visual_text > a {
+        height: 40px;
+
+        float: left;
+
+        font-size: 40px;
+        line-height: 40px;
+
+        margin-top: 0;
+        margin-left: 0;
+        margin-right: 30px;
+    }
+
+    #banner .visual_text > a {
+        float: right;
+
+        font-size: 25px;
+
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 766px) {
+    #banner .visual_text {
+        width: 700px;
+        height: 160px;
+
+        top: 40%;
+
+        text-align: center;
+    }
+
+    #banner .visual_text > h2,
+    #banner .visual_text > h3,
+    #banner .visual_text > a {
+        width: 100%;
+
+        margin-right: 0;
+        margin-bottom: 20px;
+
+        float: none;
+    }
+
+    #banner .visual_text > a {
+        width: 150px;
+
+        font-size: 25px;
+
+        padding-left: 10px;
+
+        background-position: 0 50%;
+
+        margin-bottom: 0;
+        margin-left: 275px;
+    }
+}

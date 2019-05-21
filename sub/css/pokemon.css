@@ -1,0 +1,166 @@
+/* jsm.css */
+
+@import url(common.css);
+@import url(master.css);
+
+#header {
+	background: url(../images/pokemon_header.jpg) left bottom;
+}
+
+@media screen and (max-width: 766px) {
+	#header {
+		background: #93c5b0;
+	}
+}
+
+	#title {
+		width: 746px;
+		height: 113px;
+
+		background: url(../images/pokemon_title.png) no-repeat;
+
+		margin-left: -373px;
+	}
+
+	@media screen and (max-width: 745px) {
+		#title {
+			width: 95%;
+
+			background-size: contain;
+
+			left: 2.5%;
+			margin-left: 0;
+		}
+	}
+
+	#header > a {
+		margin-left: -125px;
+	}
+				#color > ul > li {
+					width: 360px;
+				}
+
+				#color > ul > li:nth-of-type(1) > div {
+					width: 360px;
+
+					background: linear-gradient(to left, #000, #fff);
+
+					border: 1px solid #000;
+					box-sizing: border-box;
+				}
+
+@media screen and (max-width: 1366px) {
+	.concept {
+		height: 2735px;
+	}
+}
+
+@media screen and (max-width: 766px) {
+	.concept {
+		height: 1330px;
+	}
+}
+
+	.img_wrap > img:nth-of-type(1) {
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+
+	.img_wrap > img:nth-of-type(2) {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+
+	.img_wrap > img:nth-of-type(3) {
+		position: absolute;
+		left: 660px;
+		bottom: 0;
+	}
+
+	@media screen and (max-width: 1366px) {
+		.img_wrap > img:nth-of-type(1) {
+			width: 768px;
+			height: auto;
+
+			left: 50%;
+			margin-left: -384px;
+			top: 0;
+		}
+
+		.img_wrap > img:nth-of-type(2) {
+			position: absolute;
+			right: 50%;
+			margin-right: -33px;
+			top: 481px;
+		}
+
+		.img_wrap > img:nth-of-type(3) {
+			position: absolute;
+			left: 50%;
+			margin-left: 132px;
+			bottom: 67px;
+		}
+	}
+
+	@media screen and (max-width: 766px) {
+		.img_wrap > img:nth-of-type(1) {
+			width: 320px;
+			height: auto;
+
+			left: 50%;
+			margin-left: -160px;
+			top: 0;
+		}
+
+		.img_wrap > img:nth-of-type(2) {
+			width: 150px;
+
+			margin-right: -75px;
+			top: 234px;
+		}
+
+		.img_wrap > img:nth-of-type(3) {
+			width: 100px;
+
+			left: 50%;
+			margin-left: -50px;
+			bottom: 0px;
+		}
+	}
+
+	@media screen and (max-width: 1366px) {
+		.details {
+			height: 1152px;
+
+			top: 1533px;
+		}
+	}
+
+		.details > img:last-child {
+			margin-top: 0;
+		}
+
+		@media screen and (max-width: 1366px) {
+			.details > img:last-child {
+				width: 760px;
+
+				margin-right: 0;
+
+				position: absolute;
+				top: 585px;
+				left: 50%;
+				margin-left: -380px;
+			}
+		}
+
+#side_nav {
+	height: 150px;
+}
+
+@media screen and (max-width: 1366px) {
+	#side_nav {
+		height: 50px;
+	}
+}

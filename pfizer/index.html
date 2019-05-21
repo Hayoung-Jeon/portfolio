@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=1.0, maximum-scale=2.0" />
+
+        <title>포트폴리오 - 화이자제약</title>
+
+        <link rel="stylesheet" href="css/master.css" />
+        <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/jumpMenu.js"></script>
+
+        <script src="js/slick.min.js"></script>
+    </head>
+    <body>
+
+        <div class="skip">
+            <a href="#main_nav">메인메뉴</a>
+            <a href="#service">화이자 서비스</a>
+            <a href="#search">제품검색</a>
+            <a href="#product">제품소개</a>
+            <a href="#report">지출보고서</a>
+            <a href="#support">화이자 환자 지원 사업 안내</a>
+            <a href="#notice">공지사항</a>
+            <a href="#hire">채용정보</a>
+        </div>
+
+        <input id="toggle_menu" type="checkbox" />
+
+        <div id="wrap">
+            <header id="header">
+                <h1 id="h_logo"><a href="#">화이자제약</a></h1>
+
+                <nav id="main_nav">
+                    <ul class="nav1">
+                        <li>
+                            <a href="#">회사소개</a>
+                            <div class="deco"></div>
+                            <ul class="nav2">
+                                <li>
+                                    <h3>한국 화이자 제약</h3>
+                                    <ul class="nav3">
+                                        <li><a href="#">기업소개</a></li>
+                                        <li><a href="#">연혁</a></li>
+                                        <li><a href="#">비전 및 미션</a></li>
+                                        <li><a href="#">핵심가치</a></li>
+                                        <li><a href="#">윤리경영</a></li>
+                                        <li><a href="#">찾아오시는 길</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <h3>화이자그룹</h3>
+                                    <ul class="nav3">
+                                        <li><a href="#">그룹소개</a></li>
+                                        <li><a href="#">연혁</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">연구개발</a>
+                            <div class="deco"></div>
+                            <ul class="nav2">
+                                <li>
+                                    <h3>화이자 글로벌 R&D</h3>
+                                    <ul class="nav3">
+                                        <li><a href="#">개요</a></li>
+                                        <li><a href="#">화이자 R&D 연구소</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <h3>한국화이자 R&D</h3>
+                                    <ul class="nav3">
+                                        <li><a href="#">개요</a></li>
+                                        <li><a href="#">뉴스레터</a></li>
+                                        <li><a href="#">연도별 활동</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">제품정보</a>
+                        </li>
+                        <li>
+                            <a href="#">사회공헌</a>
+                            <div class="deco"></div>
+                            <ul class="nav2 single">
+                                <li><a href="#">조손가정 행복만들기</a></li>
+                                <li><a href="#">사랑의 병원 그림축제</a></li>
+                                <li><a href="#">사랑의 장학금</a></li>
+                                <li><a href="#">의학 연구 지원</a></li>
+                                <li><a href="#">'헬시 에이징' 이니셔티브</a></li>
+                                <li><a href="#">기타</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">화이자소식</a>
+                            <div class="deco"></div>
+                            <ul class="nav2">
+                                <li><h3><a href="#">공지사항</a></h3></li>
+                                <li><h3><a href="#">고객센터</a></h3></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+
+                <label class="toggle_menu" for="toggle_menu">메뉴</label>
+            </header>
+
+            <nav id="toggle_nav">
+                <ul>
+                    <ul class="t_nav1">
+                    <li>
+                        <h3>회사소개</h3>
+                        <ul class="t_nav2">
+                            <li>
+                                <h3>한국 화이자 제약</h3>
+                                <ul class="t_nav3">
+                                    <li><a href="#">기업소개</a></li>
+                                    <li><a href="#">연혁</a></li>
+                                    <li><a href="#">비전 및 미션</a></li>
+                                    <li><a href="#">핵심가치</a></li>
+                                    <li><a href="#">윤리경영</a></li>
+                                    <li><a href="#">찾아오시는 길</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3>화이자그룹</h3>
+                                <ul class="t_nav3">
+                                    <li><a href="#">그룹소개</a></li>
+                                    <li><a href="#">연혁</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>연구개발</h3>
+                        <ul class="t_nav2">
+                            <li>
+                                <h3>화이자 글로벌 R&D</h3>
+                                <ul class="t_nav3">
+                                    <li><a href="#">개요</a></li>
+                                    <li><a href="#">화이자 R&D 연구소</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3>한국화이자 R&D</h3>
+                                <ul class="t_nav3">
+                                    <li><a href="#">개요</a></li>
+                                    <li><a href="#">뉴스레터</a></li>
+                                    <li><a href="#">연도별 활동</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>제품정보</h3>
+                    </li>
+                    <li>
+                        <h3>사회공헌</h3>
+                        <ul class="t_nav2 single">
+                            <li><a href="#">조손가정 행복만들기</a></li>
+                            <li><a href="#">사랑의 병원 그림축제</a></li>
+                            <li><a href="#">사랑의 장학금</a></li>
+                            <li><a href="#">의학 연구 지원</a></li>
+                            <li><a href="#">'헬시 에이징' 이니셔티브</a></li>
+                            <li><a href="#">기타</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>화이자소식</h3>
+                        <ul class="t_nav2">
+                            <li><h3><a href="#">공지사항</a></h3></li>
+                            <li><h3><a href="#">고객센터</a></h3></li>
+                        </ul>
+                    </li>
+                </ul>
+                </ul>
+                <label id="toggle_close" for="toggle_menu"></label>
+            </nav>
+
+            <div id="banner">
+                <div class="img_wrap_pc">
+                    <img src="images/visual_01.jpg" alt="화이자제약은 혁신적 신약 개발로 의학 발전에 이바지 합니다." />
+                    <img src="images/visual_02.jpg" alt="화이자제약은 사람들과 더불어 살아가는 기업입니다." />
+                    <img src="images/visual_03.jpg" alt="화이자제약은 투명하고 엄격한 윤리 기준을 적용합니다." />
+                </div>
+                <div class="img_wrap_tablet">
+                    <img src="images/visual_t01.jpg" alt="화이자제약은 혁신적 신약 개발로 의학 발전에 이바지 합니다." />
+                    <img src="images/visual_t02.jpg" alt="화이자제약은 사람들과 더불어 살아가는 기업입니다." />
+                    <img src="images/visual_t03.jpg" alt="화이자제약은 투명하고 엄격한 윤리 기준을 적용합니다." />
+                </div>
+                <div class="img_wrap_mobile">
+                    <img src="images/visual_m01.jpg" alt="화이자제약은 혁신적 신약 개발로 의학 발전에 이바지 합니다." />
+                    <img src="images/visual_m02.jpg" alt="화이자제약은 사람들과 더불어 살아가는 기업입니다." />
+                    <img src="images/visual_m03.jpg" alt="화이자제약은 투명하고 엄격한 윤리 기준을 적용합니다." />
+                </div>
+
+                <nav id="service">
+                    <div class="service_wrap">
+                    <div id="aging">
+                        <a href="#">헬시에이징</a>
+                        <div class="more">
+                            <img src="images/aging.jpg" alt="헬시에이징" />
+                            <p>
+                                한국화이자제약은<br />
+                                ‘헬시에이징’(건강하게 나이들기)의<br />
+                                중요성을 강조하고,<br />
+                                이를 실현하기 위해<br />
+                                다양한 이해관계자들과<br />
+                                협력하고 있습니다.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div id="plink">
+                        <a href="#">Pfizerlink</a>
+                        <div class="more">
+                            <img src="images/plink.jpg" alt="화이자링크" />
+                            <p>
+                                Pfizerlink는<br />
+                                선생님들께 꼭 필요한<br />
+                                정보와 컨텐츠로 찾아가는<br />
+                                화이자제약만의<br />
+                                맞춤형 솔루션입니다.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div id="mlink">
+                        <a href="#">메디닥링크</a>
+                        <div class="more">
+                            <img src="images/mlink.jpg" alt="메디닥링크" />
+                            <p>
+                                메디닥링크는<br />
+                                화이자의 의료 학술정보 플랫폼으로,<br />
+                                질환 관련 국내외의<br />
+                                최신 의료학습정보를<br />
+                                제공합니다.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div id="minfo">
+                        <a href="#">의학정보실</a>
+                        <div class="more">
+                            <img src="images/minfo.jpg" alt="의학정보실" />
+                            <p>
+                                의학정보실은<br />
+                                화이자 제품에 대한 의학정보를<br />
+                                직접 검색 및 요청하실 수 있는<br />
+                                정보 사이트입니다.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                </nav>
+            </div>
+            <script>
+                $(function() {
+                    var timerId = 0;
+                    var index = 0;
+
+                    auto();
+
+                    function auto() {
+                            timerId = setInterval(function() {
+                            index++;
+
+                            if (index > 2 ) {
+                                index = 0;
+                            }
+
+                            if ($( window ).width() > 1383) {
+                                $(".img_wrap_pc > img").fadeOut(2000);
+                                $(".img_wrap_pc > img").eq(index).fadeIn(3000);
+                            } else if ($( window ).width() > 766) {
+                                $(".img_wrap_tablet > img").fadeOut(2000);
+                                $(".img_wrap_tablet > img").eq(index).fadeIn(3000);
+                            } else {
+                                $(".img_wrap_mobile > img").fadeOut(2000);
+                                $(".img_wrap_mobile > img").eq(index).fadeIn(3000);
+                            }
+
+                        }, 7000);
+                    }
+
+                    $("#service").hover(function() {
+                        clearInterval(timerId);
+                    }, function() {
+                        auto();
+                    });
+                });
+            </script>
+
+            <div class="contents">
+
+                <div id="search">
+                    <h3 class="c_title">제품검색</h3>
+                    <p>※ 본 사이트에서 제공되는 제품정보는 한국 거주민을 위한 것으로, 제품명이 다른 이름으로 표기될 수도 있습니다.</p>
+
+                    <div class="search_wrap">
+                        <input id="txt_search" type="text" placeholder="검색어를 입력하세요" />
+                        <input id="btn_search" type="button" value="검색" />
+                    </div>
+                </div>
+
+                <div id="product">
+                    <h3 class="c_title">제품소개</h3>
+                    <div class="slider">
+                        <div class="item">
+                            <img src="images/product_01.jpg" alt="쎄레브렉스®캡슐 400mg" />
+                            <h4 class="category">전문의약품</h4>
+                            <h3 class="name">쎄레브렉스®캡슐 400mg</h3>
+                            <p class="explain">통증치료제</p>
+                        </div>
+                        <div class="item">
+                            <img src="images/product_02.jpg" alt="엔브렐 50mg 프리필드주" />
+                            <h4 class="category">전문의약품</h4>
+                            <h3 class="name">엔브렐 50mg 프리필드주</h3>
+                            <p class="explain">면역/이식치료제</p>
+                        </div>
+                        <div class="item">
+                            <img src="images/product_03.jpg" alt="잴코리®캡슐" />
+                            <h4 class="category">전문의약품, 희귀의약품</h4>
+                            <h3 class="name">잴코리®캡슐</h3>
+                            <p class="explain">항암제</p>
+                        </div>
+                        <div class="item">
+                            <img src="images/product_04.jpg" alt="챔픽스®정" />
+                            <h4 class="category">전문의약품</h4>
+                            <h3 class="name">챔픽스®정</h3>
+                            <p class="explain">금연보조제</p>
+                        </div>
+                        <div class="item">
+                            <img src="images/product_05.jpg" alt="카듀엣®정" />
+                            <h4 class="category">전문의약품</h4>
+                            <h3 class="name">카듀엣®정</h3>
+                            <p class="explain">순환기질환치료제</p>
+                        </div>
+                        <div class="item">
+                            <img src="images/product_06.jpg" alt="프리베나®13주" />
+                            <h4 class="category">전문의약품</h4>
+                            <h3 class="name">프리베나®13주</h3>
+                            <p class="explain">백신</p>
+                        </div>
+                    </div>
+                </div>
+                <script type="text/javascript">
+                    $(document).ready(function(){
+                      $('.slider').slick({
+                        dots: true,
+                        autoplay: true,
+                        autoplaySpeed: 3000,
+                        pauseOnFocus: false
+                      });
+                    });
+                </script>
+
+                <div id="report">
+                    <h3 class="c_title">지출보고서</h3>
+                    <input id="agreement" type="checkbox" />
+                    <div class="agree">
+                        <span>개인정보 수집 및 이용에 관한 동의</span><br /><br />
+
+                        <span>[필수] 일반 개인정보의 처리에 대한 동의</span><br /><br />
+
+                        한국화이자제약㈜(이하 “회사”)은 귀하로부터 귀하의 [성명, 기관 명, 기관 주소, 전공 과, 휴대폰 번호, 이메일 주 소](“개인정보”)를 수집하며, 위 정보는 [귀하에 대한 지급 내역 확인 및 관련 내용의 보고 및 회신]을 위하여 수집· 이용됩니다.
+                        회사는 관계 법령의 규정에 따라 귀하의 개인정보를 보존할 의무가 있 는 경우가 아닌 한, 지급 내역 확인 및 회신 절차가 완료되는 즉시 파기됩니다(최대 1월 이내). 귀하는 위와 같은 개인정보의 수집 및 이용을 거부할 수 있습니다. 다만 동 개인정보의 수집 및 이용에 동의하지 않으실 경우 지출보고 관련 절차 진행에 어려움이 발생할 수 있음을 알려 드립니다.
+
+                        <label class="agreement" for="agreement">
+                            <img src="images/check.png"><span>이에 동의합니다</span>
+                        </label>
+
+                        <label class="close" for="agreement">닫기</label>
+                    </div>
+                    <label class="box" for="agreement">
+                        <p>개인정보 수집 및 이용에 관한 동의</p>
+                        <span>※ 지출보고서 요청을 위해 클릭하여 주십시오</span>
+                    </label>
+                    <div class="click">
+                        <p>휴대폰 본인 인증</p>
+                        <img src="images/phone.png" alt="휴대폰 본인 인증" />
+                    </div>
+
+                    <a class="report_link" href="#">개인정보 수집 및<br />이용에 관한 동의</a>
+                    <a class="report_link one_line" href="#">휴대폰 본인 인증</a>
+                </div>
+                <script>
+                    $(function() {
+                        $("label.agreement").click(function() {
+                            $("label.box").html("개인정보 수집 및 이용에 관해<br />동의하셨습니다.");
+                        });
+                    });
+                </script>
+
+                <div id="support">
+                    <h3 class="c_title">화이자 환자 지원 사업</h3>
+                    <a href="#">입랩스 전액본인부담환자 약제비 환급·지원 사업 안내</a>
+                    <a href="#">잴코리 전액본인부담환자 약제비 환급·지원 사업 안내</a>
+                </div>
+
+                <div id="notice">
+                    <div class="left">
+                        <h3 class="c_title">공지사항</h3>
+                        <a href="#">더보기</a>
+                        <ul>
+                            <li>
+                                <p class="date">2019-02-22</p>
+                                <a href="#" class="notice_title">제14회 ‘대한의사협회 화이자국제협력공로상’ 수상 후보자 공모</a>
+                            </li>
+                            <li>
+                                <p class="date">2019-01-17</p>
+                                <a href="#" class="notice_title">한국화이자제약, 저소득 어르신들 ‘헬시 에이징’을 위한 후원금 전달</a>
+                            </li>
+                            <li>
+                                <p class="date">2019-01-07</p>
+                                <a href="#" class="notice_title">한국화이자제약, 임원 인사 발표</a>
+                            </li>
+                            <li>
+                                <p class="date">2018-10-22</p>
+                                <a href="#" class="notice_title">한국화이자제약, ‘제12회 화이자 R&D 유니버시티’ 개최</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="right">
+                        <h3 class="c_title">제품관련 소식</h3>
+                        <a href="#">더보기</a>
+                        <ul>
+                            <li>
+                                <p class="date">2019-02-11</p>
+                                <a href="#" class="notice_title">허가사항 변경지시(재심사)에 따른 공고_진타솔로퓨즈프리필드주</a>
+                            </li>
+                            <li>
+                                <p class="date">2019-01-31</p>
+                                <a href="#" class="notice_title">자이복스정 600mg(리네졸리드,제조번호 W94106) 의 자진회수에 대한 안내</a>
+                            </li>
+                            <li>
+                                <p class="date">2019-01-03</p>
+                                <a href="#" class="notice_title">허가사항 변경지시 (통일조정)에 따른 공고_화이자젬시타빈액상주</a>
+                            </li>
+                            <li>
+                                <p class="date">2019-01-03</p>
+                                <a href="#" class="notice_title">허가사항 변경지시 (통일조정)에 따른 공고_[뉴론틴캡슐 100mg, 300mg, 400mg, 뉴론틴정 600mg, 800mg]</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="hire">
+                    <h3 class="c_title">채용정보</h3>
+                    <a href="#">
+                        온라인 지원
+                    </a>
+                </div>
+            </div>
+
+            <footer id="footer">
+                    <div id="upper_footer">
+                        <ul class="f_pc">
+                            <li>찾아오시는 길</li>
+                            <li>사이트맵</li>
+                            <li>한국화이자제약 개인정보처리 방침</li>
+                            <li>개인정보보호법 교육 자료</li>
+                            <li>Terms of use</li>
+                        </ul>
+                    </div>
+                    <div id="lower_footer">
+                        <h1 id="f_logo"><a href="#">화이자제약</a></h1>
+                        <ul>
+                            <li>주소 : 서울특별시 중구 퇴계로 110 화이자타워 (우)04631</li>
+                            <li>전화 : 02-317-2114</li>
+                        </ul>
+                        <address>
+                            © Pfizer Ltd. 2007-2015 All rights reserved. The products discussed herein may have different labeling in different countries<br />
+                            This information - including product information - is intended only for residents of the Republic of Korea.
+                        </address>
+                    </div>
+                </footer>
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,94 @@
+/* bestseller.css */
+
+#bestseller {
+    position: relative;
+    
+    width: 100%;
+    
+    overflow: hidden;
+    
+    margin-top: 50px;
+}
+
+    #bestseller > h3.section_title {
+        background: url(../images/title_bestsellers.png);
+        background-size: contain;
+    }
+
+    #bestseller > div.item_wrap {
+        overflow: hidden;
+
+        width: 800%;
+
+        position: absolute;
+
+        top: 50px;
+    }
+
+        #bestseller > .item_wrap > .item {
+            float: left;
+
+            width: 12.5%;
+
+            text-align: center;
+        }
+
+            #bestseller > .item_wrap > .item > a {
+                width: 100%;
+            }
+
+                #bestseller > .item_wrap > .item > a > img {
+                    width: 60%;
+                    max-width: 250px;
+                    height: 60%;
+                    max-height: 250px;
+
+                    margin: 0 20%;
+                }
+
+                #bestseller > .item_wrap > .item > a > h3.item_name {
+                    font-size: 16px;
+
+                    margin-top: 10px;
+                }
+
+                #bestseller > .item_wrap > .item > a > p.item_price {
+                    font-weight: bold;
+                    color: #ccc;
+                }
+
+    #bestseller > .btn_next,
+    #bestseller > .btn_prev {
+        display: block;
+
+        width: 10%;
+        max-width: 43px;
+        height: 15%;
+        max-height: 50px;
+
+        background: url(../images/btn_next.png) no-repeat;
+        background-size: contain;
+
+        border: 0;
+
+        text-indent: -6000px;
+        overflow: hidden;
+
+        position: absolute;
+        top: 50%;
+        margin-top: -10%;
+        right: 5%;
+
+        outline: none;
+        
+        opacity: 0.5;
+    }
+
+    #bestseller > .btn_prev {
+        background: url(../images/btn_prev.png) no-repeat;
+        background-size: contain;
+
+        left: 5%;
+
+        opacity: 0;
+    }

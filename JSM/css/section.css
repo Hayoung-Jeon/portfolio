@@ -1,0 +1,220 @@
+/* section.css */
+
+section {
+    width: 1248px;
+
+    margin: 90px auto 0;
+
+    position: relative;
+}
+
+/* 섹션 타이틀 */
+.section_title {
+    width: 416px;
+    height: 48px;
+
+    background: url(../images/title_bemycolor.png);
+
+    text-indent: -6000px;
+    overflow: hidden;
+
+    margin: 0 auto 90px;
+}
+
+#bestseller > .section_title {
+    background: url(../images/title_bestsellers.png);
+}
+
+#events > .section_title {
+    background: url(../images/title_event.png);
+}
+
+#instagram > .section_title {
+    background: url(../images/title_insta.png);
+}
+
+/* 섹션1 */
+#brand {
+    height: 852px;
+
+    margin-top: 200px;
+}
+
+    #b_movie {
+        width: 1138px;
+        height: 643px;
+
+        position: absolute;
+        left: 50%;
+        margin-left: -569px;
+
+        display: block;
+    }
+
+/* 섹션2 */
+#bestseller {
+    height: 740px;
+
+    position: relative;
+}
+
+    #bestseller > .bestseller_wrap {
+        overflow: hidden;
+
+        position: absolute;
+        left: 70px;
+    }
+
+        #bestseller > .bestseller_wrap > .best_item {
+            width: 250px;
+            height: 250px;
+
+            float: left;
+
+            margin-right: 30px;
+            margin-bottom: 30px;
+
+            position: relative;
+
+            overflow: hidden;
+        }
+
+        #bestseller > .bestseller_wrap > .best_item:nth-of-type(1) {
+            background: url(../images/bpd1.jpg);
+        }
+
+        #bestseller > .bestseller_wrap > .best_item:nth-of-type(2) {
+            background: url(../images/bpd2.jpg);
+        }
+
+        #bestseller > .bestseller_wrap > .best_item:nth-of-type(3) {
+            background: url(../images/bpd3.jpg);
+        }
+
+        #bestseller > .bestseller_wrap > .best_item:nth-of-type(4) {
+            background: url(../images/bpd4.jpg);
+
+            margin-right: 0;
+        }
+
+        #bestseller > .bestseller_wrap > .best_item:nth-of-type(5),
+        #bestseller > .bestseller_wrap > .best_item:nth-of-type(6),
+        #bestseller > .bestseller_wrap > .best_item:nth-of-type(7),
+        #bestseller > .bestseller_wrap > .best_item:nth-of-type(8) {
+            margin-bottom: 0;
+        }
+
+        #bestseller > .bestseller_wrap > .best_item:nth-of-type(5) {
+            background: url(../images/bpd5.jpg);
+        }
+
+        #bestseller > .bestseller_wrap > .best_item:nth-of-type(6) {
+            background: url(../images/bpd6.jpg);
+        }
+
+        #bestseller > .bestseller_wrap > .best_item:nth-of-type(7) {
+            background: url(../images/bpd7.jpg);
+        }
+
+        #bestseller > .bestseller_wrap > .best_item:nth-of-type(8) {
+            background: url(../images/bpd8.jpg);
+        }
+
+            #bestseller > .bestseller_wrap > .best_item > .item_detail {
+                width: 250px;
+                height: 250px;
+
+                background: rgba(0, 0, 0, 0.5);
+
+                text-align: center;
+                padding-top: 100px;
+                box-sizing: border-box;
+
+                transition-duration: 0.5s;
+
+                position: absolute;
+                top: -250px;
+            }
+
+            #bestseller > .bestseller_wrap > .best_item:nth-of-type(1):hover > .item_detail,
+            #bestseller > .bestseller_wrap > .best_item:nth-of-type(2):hover > .item_detail,
+            #bestseller > .bestseller_wrap > .best_item:nth-of-type(3):hover > .item_detail,
+            #bestseller > .bestseller_wrap > .best_item:nth-of-type(4):hover > .item_detail,
+            #bestseller > .bestseller_wrap > .best_item:nth-of-type(5):hover > .item_detail,
+            #bestseller > .bestseller_wrap > .best_item:nth-of-type(6):hover > .item_detail,
+            #bestseller > .bestseller_wrap > .best_item:nth-of-type(7):hover > .item_detail,
+            #bestseller > .bestseller_wrap > .best_item:nth-of-type(8):hover > .item_detail {
+                top: 0;
+            }
+
+/* 섹션3 */
+#events {
+    height: 585px;
+}
+
+    #events > .event_wrap {
+        overflow: hidden;
+    }
+
+        #events > .event_wrap > a {
+            float: left;
+
+            margin-right: 32px;
+        }
+
+        #events > .event_wrap > a:last-child {
+            margin-right: 0;
+        }
+
+            #events > .event_wrap > a > img {
+                width: 288px;
+                height: 375px;
+
+                transition-duration: 0.3s;
+            }
+
+            #events > .event_wrap > a:nth-of-type(1):hover > img,
+            #events > .event_wrap > a:nth-of-type(2):hover > img,
+            #events > .event_wrap > a:nth-of-type(3):hover > img,
+            #events > .event_wrap > a:nth-of-type(4):hover > img {
+                width: 268px;
+                height: 355px;
+
+                padding: 10px;
+            }
+
+/* 섹션4 */
+#instagram {
+    height: 493px;
+}
+
+    #instagram > .insta_wrap {
+        overflow: hidden;
+    }
+
+    #instagram > .insta_wrap > a {
+        float: left;
+
+        margin-right: 32px;
+    }
+
+    #instagram > .insta_wrap > a:last-child {
+        margin-right: 0;
+    }
+
+        #instagram > .insta_wrap > a > img {
+            width: 288px;
+            height: 288px;
+
+            transition-duration: 0.3s;
+        }
+
+        #instagram > .insta_wrap > a:nth-of-type(1):hover > img,
+        #instagram > .insta_wrap > a:nth-of-type(2):hover > img,
+        #instagram > .insta_wrap > a:nth-of-type(3):hover > img,
+        #instagram > .insta_wrap > a:nth-of-type(4):hover > img {
+            width: 268px;
+            height: 268px;
+
+            padding: 10px;
+        }
